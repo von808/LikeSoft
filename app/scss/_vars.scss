@@ -1,0 +1,52 @@
+$only-white: #fff;
+$only-blue: #057AFF;
+$transparent: transparent;
+$blackblue-lightgray: #06111C;
+:root{
+  --var-only-blue:#057AFF;
+
+  --var-trust-bg:#FAFAFA;
+  --var-trust-title:#06111C;
+  --var-trust-company:#06111C;
+  --var-services-bg: #FFFFFF;
+  --var-services-text: #06111C;
+  --var-services-content-bg: transparent;
+}
+
+[dark]{
+--var-trust-bg:#0D1D2E;
+--var-trust-title:#FAFAFA;
+--var-trust-company:#FAFAFA;
+--var-services-bg: #06111C;
+--var-services-text: #FFFFFF;
+--var-services-content-bg: #0D1D2E;
+}
+
+// @media (prefers-color-scheme: dark){
+//   :root{
+
+//   }
+// }
+
+$checkbox-first-color: #102539;
+$checkbox-second-color: #FAFAFA;
+$checkbox-third-color: #057AFF;
+$checkbox-fourth-color: #FFFFFF;
+$checkbox-disabled-color: #ccc;
+$checkbox-focus-color: #000;
+$checkbox-width: 31px;
+$checkbox-height: 17px;
+$checkbox-offset: 2px;
+$checkbox-duration: .3s;
+
+// .checkbox{
+//   // not-checked
+//   --first-color: #102539;
+//   --second-color: #FAFAFA;
+//   // checked
+//   --third-color: #057AFF;
+//   --fourth-color: #FFFFFF;
+//   --width: 50px;
+//   --height: 30px;
+//   --offset: 20px;
+// }
