@@ -314,8 +314,119 @@
   }
 }
 
+.secret {
+  background-color: var(--var-trust-bg);
+  &__inner{
+    padding: 80px 0 60px;
+  }
+  &__title{
+    font-family: 'Garamond', sans-serif;
+    font-size: 52px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--var-services-text);
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--var-services-text);
+    margin-bottom: 60px;
+  }
+  &__content{
+    text-align: center;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__item{
+    width: 100%;
+    img{
+      margin-bottom: 30px;
+    }
+  }
+  &__item-title{
+    font-family: 'Garamond', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30.8px;
+    margin-bottom: 12px;
+  }
+  &__item-subtitle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $only-grey;
+  }
+}
 
-
-
+.why {
+  background-color: var(--var-trust-bg);
+  &__inner{
+    padding: 80px 0 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 50%;
+  }
+  &__title{
+    font-family: 'Garamond', sans-serif;
+    font-size: 52px;
+    line-height: 120%;
+    color: var(--var-services-text);
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $blackblue-lightgray;
+    margin-bottom: 18px;
+  }
+  &__author{
+    display: flex;
+  }
+  &__photo{
+    width: 74px;
+    padding: 0 5px 12px;
+  }
+  &__name{
+    font-family: 'Garamond', sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+    line-height: 15.4px;
+    width: fit-content;
+  }
+  &__signature{
+    margin: 4px 0 0 30px;
+    width: 93px;
+  }
+  &__list{
+    max-width: 50%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    .list-item{
+      display: flex;
+      gap: 16px;
+      width: 213px;
+      margin: 0 40px 30px 0;
+      .list-lightning{
+        width: 23px;
+        margin: 0 0 auto;
+      }
+    }
+  }
+}
 
 @import 'media';
