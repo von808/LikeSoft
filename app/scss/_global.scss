@@ -46,11 +46,11 @@ a{
 .checkbox::before{
   content: '';
   position: absolute;
-  top: -6px;
+  top: -5px;
   left: -34px;
-  width: 28px;
-  height: 28px;
-  background-image: url(../images/theme-light.svg);
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/theme-dark.svg);
   background-repeat: no-repeat;
   background-size: cover;
   pointer-events: none;
@@ -58,11 +58,11 @@ a{
 .checkbox::after{
   content: '';
   position: absolute;
-  top: -5px;
-  right: -32px;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/theme-dark.svg);
+  top: -6px;
+  right: -34px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/theme-light.svg);
   background-repeat: no-repeat;
   background-size: cover;
   pointer-events: none;
@@ -80,7 +80,7 @@ a{
 }
 .checkbox__input:checked + .checkbox-style::before {
   background-color: $checkbox-fourth-color;
-  left: calc($checkbox-width - $checkbox-height + $checkbox-offset);
+  right: calc($checkbox-width - $checkbox-height + $checkbox-offset);
 }
 // .checkbox__input:focus + .checkbox-style {
 //   box-shadow: 0 0 0 2px $checkbox-focus-color;
@@ -112,7 +112,7 @@ a{
   content: '';
   position: absolute;
   top: $checkbox-offset;
-  left: $checkbox-offset;
+  right: $checkbox-offset;
   width: calc($checkbox-height - (2 * $checkbox-offset));
   height: calc($checkbox-height - 2 * $checkbox-offset);
   background-color: $checkbox-second-color;
