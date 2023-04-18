@@ -1,25 +1,43 @@
 $only-white: #fff;
 $only-blue: #057AFF;
 $transparent: transparent;
-$blackblue-lightgray: #06111C;
+$blackblue: #06111C;
 :root{
   --var-only-blue:#057AFF;
 
+  --var-body-bg:#FFFFFF;
   --var-trust-bg:#FAFAFA;
   --var-trust-title:#06111C;
   --var-trust-company:#06111C;
   --var-services-bg: #FFFFFF;
   --var-services-text: #06111C;
   --var-services-content-bg: transparent;
+  --var-services-duration-slide-line: #057AFF;
+  --var-case-light: flex;
+  --var-case-dark: none;
+  --var-case-info-width: 351px;
+  --var-case-info-mr:0;
+  --var-cases-info-title:#06111C;
+  --var-cases-info-stack-bg:#FAFAFA;
+  --var-cases-info-stack:#6A7077;
 }
 
 [dark]{
+--var-body-bg:#06111C;
 --var-trust-bg:#0D1D2E;
 --var-trust-title:#FAFAFA;
 --var-trust-company:#FAFAFA;
 --var-services-bg: #06111C;
 --var-services-text: #FFFFFF;
 --var-services-content-bg: #0D1D2E;
+--var-case-light: none;
+--var-case-dark: flex;
+--var-case-info-width: 549px;
+--var-case-info-mr:-50px;
+--var-cases-info-title:#FFFFFF;
+--var-cases-info-stack-bg:#0D1D2E;
+--var-cases-info-stack:#FFFFFF;
+
 }
 
 // @media (prefers-color-scheme: dark){

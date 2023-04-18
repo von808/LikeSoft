@@ -21,12 +21,16 @@ $(function () {
 		vertical: true,
 		verticalSwiping: true,
 		arrows: false,
+		pauseOnFocus: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
     asNavFor: '.services__dots',
   });
 	$('.services__dots').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
 		vertical: true,
+		pauseOnFocus: false,
     focusOnSelect: true,
     asNavFor: '.services__slider',
   });
