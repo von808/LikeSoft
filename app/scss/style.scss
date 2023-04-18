@@ -5,7 +5,11 @@
 @import 'global';
 
 .header{
-  background-color: #06111C;
+  background-color: $transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -48,6 +52,101 @@
   }
 }
 
+.intro{
+  background-color: $blackblue;
+  color: $only-white;
+  padding-top: 110px;
+  overflow: hidden;
+  &__inner{
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 540px;
+    margin: 67px 0 147px 0;
+  }
+  &__title{
+    font-family: 'Garamond', sans-serif;
+    font-size: 64px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    span{
+      display: inline-block;
+    }
+  }
+  &__text{
+    font-family: 'Intro', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 60px;
+  }
+  &__map{
+    background-image: url(../images/intro-map.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: right-442px center;
+    object-fit: cover;
+    width: 1210px;
+    height: 703px;
+    position: absolute;
+    right: -642px;
+    bottom: -77px;
+  }
+}
+.map__point{
+  position: absolute;
+  width: 34px;
+  height: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &-circle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgba($only-blue, .2);
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $only-blue;
+    }
+  }
+  span{
+    font-family: 'Garamond', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+  }
+  &--1{
+    top: 19.5%;
+    left: 14.5%;
+  }
+  &--2{
+    top: 36%;
+    left: 20.7%;
+  }
+  &--3{
+    top: 7.1%;
+    left: 37%;
+  }
+  &--4{
+    top: 55%;
+    left: 52.5%;
+  }
+  &--5{
+    top: 30.5%;
+    left: 55.2%;
+  }
+}
 .trust{
   background-color: var(--var-trust-bg);
   &__inner{
@@ -81,7 +180,7 @@
 }
 .services{
   background-color: var(--var-services-bg);
-  padding-top: 110px;
+  padding: 110px 0;
   &__title{
     font-family: 'Garamond', sans-serif;
     font-size: 52px;
@@ -149,9 +248,106 @@
     line-height: 120%;
   }
 }
-.slick-current .dots-box h3{
-  color: var(--var-only-blue);
+.slick-current .dots-box{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -2px;
+    width: 2px;
+    height: 99px;
+    background-color: var(--var-services-duration-slide-line);
+    animation-duration: 3.4s;
+    animation-timing-function: linear;
+    animation-name: line-duration;
+    // animation-iteration-count: infinite;
+  }
+  @keyframes line-duration {
+    from {
+      height: 0;
+    }
+  
+    to {
+      height: 100%;
+    }
+  }
+  h3{
+    color: var(--var-only-blue);
+  }
 }
+
+.case{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-right: -200px;
+  padding-right: 200px;
+  min-height: 800px;
+  
+  justify-content: space-between;
+  &-light{
+    display: var(--var-case-light);
+  }
+  &-dark{
+    display: var(--var-case-dark);
+  }
+  &__info{
+    margin: 248px var(--var-case-info-mr) 0 0;
+    max-width: var(--var-case-info-width);
+  }
+  &__title{
+    color: var(--var-cases-info-title);
+    font-family: 'Garamond', sans-serif;
+    font-size: 52px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    span{
+      display: block;
+    }
+  }
+  &__stack{
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+  }
+  &__stack li{
+    color: var(--var-cases-info-stack);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 1px 10px;
+    background-color: var(--var-cases-info-stack-bg);
+    border-radius: 4px;
+  }
+  &__card{
+    margin: 105px -130px 0 0;
+    object-fit: contain;
+  }
+}
+  
+
+.technologies{
+  padding: 110px 0;
+  color: $only-white;
+  background-color: $blackblue;
+  &__inner{
+    min-height: 597px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__circles{
+    background-image: url(../images/technologies-circles.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    max-width: 589px;
+    width: 100%;
+  }
+}
+
 .footer{
   background-color: #040D16;
   color: #fff;
