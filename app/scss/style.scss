@@ -959,7 +959,7 @@
 /* Modal
 ===============================*/
 body.lock {
-  overflow: hidden;
+  overflow: visible;
 }
 .modal {
   display: none;
@@ -969,7 +969,7 @@ body.lock {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba($only-black, 0.45);
   position: fixed;
   top: 0;
   left: 0;
@@ -978,7 +978,7 @@ body.lock {
     max-width: 1200px;
     width: 100%;
     max-height: 463px;
-    padding: 32px 48px 36px;
+    padding: 32px 48px 40px;
     position: relative;
     background-color: var(--var-modal-bg);
     border-radius: 5px;
@@ -1009,9 +1009,10 @@ body.lock {
     padding: 10px;
     opacity: 0.7;
   }
-  &__block {
+  &__inner {
     width: 100%;
     height: 100%;
+    color: $only-white;
   }
   &__title{
     font-family: 'Garamond', sans-serif;
@@ -1021,32 +1022,53 @@ body.lock {
     color: $only-white;
     margin-bottom: 28px;
   }
-  &__subtitle{
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $only-white;
-  }
   &__form{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 44px;
+    margin-bottom: 27px;
   }
-  .input{
+  &__form-contacts{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 16px;
     width: 34.78%;
-    color: $only-white;
   }
-  .textarea{
+  &__contacts-item{
+    height: 100%;
+  }
+  &__form-message{
     width: 63%;
   }
   &__form-item{
     padding: 16px;
-    background-color: rgb(11, 23, 36);
+    background-color: rgba($only-black, 0.6);
     width: 100%;
+    resize: none;
+    color: $only-white;
+    font-family: $inter;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__form-item--textarea{
+    height: 93%;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__agreement{
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 16px;
+    color: $only-white;
+    padding-top: 17px;
+  }
+  &__form-name{
+    font-family: $inter;
+    font-size: 12px;
+    line-height: 18px;
+    color: $only-grey;
+    padding-bottom: 2px;
   }
 }
 
