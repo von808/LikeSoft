@@ -10,6 +10,11 @@
 </head>
 
 <body>
+  <svg style="display: none">
+    <symbol id="close" viewBox="0 0 20 20" width="20" height="20">
+      <path d="M11.105 10l8.666-8.666A.781.781 0 1018.666.23L10 8.896 1.333.23A.781.781 0 10.23 1.334l8.666 8.667L.23 18.667a.781.781 0 101.105 1.105L10 11.106l8.666 8.666a.779.779 0 001.105 0 .781.781 0 000-1.105l-8.666-8.666z"></path>
+    </symbol>
+  </svg>
   <div class="wrapper">
     <header class="header" id="header">
       <div class="container">
@@ -58,7 +63,7 @@
               <p class="intro__text">
                 LikeSoft is a custom software development company providing nearshore dedicated teams for VC-backed startups and fast-growing tech companies.
               </p>
-              <a class="btn" href="#">Ready to grow?</a>
+              <a class="btn" href="#" data-modal="contact-modal">Ready to grow?</a>
             </div>
             <div class="intro__map">
               <div class="map__point map__point--1">
@@ -522,8 +527,88 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal" id="contact-modal">
+      <div class="modal__content modal__content-contact">
+        <button class="modal__close" type="button">
+          <svg class="close">
+            <use href="#close"></use>
+          </svg>
+        </button>
+  
+        <div class="modal__block">
+          <div class="modal__title">
+            Ask your question to our specialists
+          </div>
+          <form action="post" class="modal__form">
+            <div class="input">
+              <input type="text" class="modal__form-item" placeholder="Name">
+              <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
+              <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+            </div>
+            <div class="textarea">
+              <textarea name="" id="" cols="30" rows="10" class="modal__form-item" placeholder="Enter your message"></textarea>
+            </div>
+          </form>
+          <p class="modal__subtitle">
+            By clicking on the button, I agree to <span class="onlyblue-text">the processing of personal data</span>
+          </p>
+        </div>
+      </div>
+  </div>
   </div>
   <script src="js/main.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    const modalBTN = document.querySelectorAll('[data-modal]');
+    const body = document.body;
+    const modalClose = document.querySelectorAll('.modal__close');
+    const modal = document.querySelectorAll('.modal');
+
+    modalBTN.forEach(item => {
+        item.addEventListener('click', event => {
+            let $this = event.currentTarget;
+            let modalID = $this.getAttribute('data-modal');
+            let modal = document.getElementById(modalID);
+            let modalContent = modal.querySelector('.modal__content');
+
+            modalContent.addEventListener('click', event => {
+                event.stopPropagation();
+            });
+
+            modal.classList.add('show');
+            $(body).toggleClass('lock');
+
+            setTimeout(() => {
+                modalContent.style.transform = 'none';
+                modalContent.style.opacity = '1';
+            });
+        }, 1);
+    });
+    modalClose.forEach(item => {
+        item.addEventListener('click', event => {
+            let currentModal = event.currentTarget.closest('.modal');
+
+            closeModal(currentModal);
+        });
+    });
+    modal.forEach(item => {
+        item.addEventListener('click', event => {
+            let currentModal = event.currentTarget;
+
+            closeModal(currentModal);
+        });
+    });
+    function closeModal(currentModal) {
+        let modalContent = currentModal.querySelector('.modal__content');
+        modalContent.removeAttribute('style');
+
+        setTimeout(() => {
+            currentModal.classList.remove('show');
+            body.classList.remove('lock');
+        }, 200);
+    }
+  </script>
 </body>
 
 </html>
