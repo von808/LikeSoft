@@ -1,5 +1,6 @@
 $garamond: 'Garamond', sans-serif;
-$inter: 'inter', sans-serif;
+$inter: 'Inter', sans-serif;
+$gilroy: 'Gilroy', sans-serif;
 $only-white: #fff;
 $only-black: #06111C;
 $only-blue: #057AFF;
@@ -36,6 +37,8 @@ $transparent: transparent;
   .white-header__logo{
     filter: invert(1);
   }
+  --var-btn-c: #057AFF;
+  --var-modal-bg: #14273A;
 }
 
 [dark]{
