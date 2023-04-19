@@ -103,6 +103,7 @@ a{
   background-color: $checkbox-fourth-color;
 }
 .checkbox-style {
+  display: block;
   position: relative;
   width: $checkbox-width;
   height: $checkbox-height;
@@ -154,6 +155,12 @@ a{
   border: 1px solid $only-blue;
   &:hover{
     background-color: $transparent;
+  }
+}
+
+.btn--c{
+  &:hover{
+    color: var(--var-btn-c);
   }
 }
 

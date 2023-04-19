@@ -193,16 +193,13 @@
 
   &__item {
     margin: 0 50px 20px 0;
-
-    .rect {
-      fill: var(--var-trust-company);
-    }
   }
 
   &__item svg {
     max-width: 141px;
     height: 38px;
     object-fit: contain;
+    fill: var(--var-trust-company);
   }
 }
 
