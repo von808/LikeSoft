@@ -33,12 +33,18 @@ $transparent: transparent;
   --var-cases-info-title:#06111C;
   --var-cases-info-stack-bg:#FAFAFA;
   --var-cases-info-stack:#6A7077;
+  //modal
+  --var-modal-bg: #14273A;
+  //
+
+
+
+
+
   //css
   .white-header__logo{
     filter: invert(1);
   }
-  --var-btn-c: #057AFF;
-  --var-modal-bg: #14273A;
 }
 
 [dark]{

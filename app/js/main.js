@@ -9,30 +9,79 @@ const handleChange = (isChecked) => {
 
 $(function () {
 
-  $(".back-up, .footer__bottom").on("click","a", function (event) {
+	$(".back-up, .footer__bottom").on("click", "a", function (event) {
 		event.preventDefault();
-		var id  = $(this).attr('href'),
+		var id = $(this).attr('href'),
 			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1500);
+		$('body,html').animate({ scrollTop: top }, 1500);
 	});
 
 	$('.services__slider').slick({
-    infinite: true,
+		infinite: true,
 		vertical: true,
 		verticalSwiping: true,
 		arrows: false,
 		pauseOnFocus: false,
 		autoplay: true,
 		autoplaySpeed: 3000,
-    asNavFor: '.services__dots',
-  });
+		asNavFor: '.services__dots',
+	});
 	$('.services__dots').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+		slidesToShow: 4,
+		slidesToScroll: 4,
 		vertical: true,
 		pauseOnFocus: false,
-    focusOnSelect: true,
-    asNavFor: '.services__slider',
-  });
+		focusOnSelect: true,
+		asNavFor: '.services__slider',
+	});
+
+	const modalBTN = document.querySelectorAll('[data-modal]');
+	const body = document.body;
+	const modalClose = document.querySelectorAll('.modal__close');
+	const modal = document.querySelectorAll('.modal');
+
+	modalBTN.forEach(item => {
+		item.addEventListener('click', event => {
+			let $this = event.currentTarget;
+			let modalID = $this.getAttribute('data-modal');
+			let modal = document.getElementById(modalID);
+			let modalContent = modal.querySelector('.modal__content');
+
+			modalContent.addEventListener('click', event => {
+				event.stopPropagation();
+			});
+
+			modal.classList.add('show');
+			$(body).toggleClass('lock');
+
+			setTimeout(() => {
+				modalContent.style.transform = 'none';
+				modalContent.style.opacity = '1';
+			});
+		}, 1);
+	});
+	modalClose.forEach(item => {
+		item.addEventListener('click', event => {
+			let currentModal = event.currentTarget.closest('.modal');
+
+			closeModal(currentModal);
+		});
+	});
+	modal.forEach(item => {
+		item.addEventListener('click', event => {
+			let currentModal = event.currentTarget;
+
+			closeModal(currentModal);
+		});
+	});
+	function closeModal(currentModal) {
+		let modalContent = currentModal.querySelector('.modal__content');
+		modalContent.removeAttribute('style');
+
+		setTimeout(() => {
+			currentModal.classList.remove('show');
+			body.classList.remove('lock');
+		}, 200);
+	}
 
 })
