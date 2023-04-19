@@ -44,30 +44,27 @@ a{
   cursor: pointer;
   position: relative;
 }
-.checkbox::before{
-  content: '';
+.checkbox .svg-moon{
   position: absolute;
-  top: -5px;
-  left: -34px;
-  width: 26px;
-  height: 26px;
-  background-image: url(../images/theme-dark.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -8px;
+  left: -36px;
+  width: 32px;
+  height: 32px;
   pointer-events: none;
 }
-.checkbox::after{
-  content: '';
+.checkbox .svg-sun{
   position: absolute;
   top: -6px;
   right: -34px;
   width: 28px;
   height: 28px;
-  background-image: url(../images/theme-light.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   pointer-events: none;
-
+}
+.svg-white path{
+  stroke: $only-white;
+}
+.svg-black path{
+  stroke: var(--var-white-header-svg);
 }
 .checkbox__input {
   position: absolute;
@@ -121,23 +118,6 @@ a{
   border-radius: 50%;
   transition: $checkbox-duration;
 }
-// .checkbox-style{
-//   position: relative;
-//   width: var(--width);
-//   height: var(--height);
-//   border-radius: $var(--width);
-//   background-color: var(--first-color);
-// }
-// .checkbox-style::before{
-//   content: '';
-//   position: absolute;
-//   top: var(--offset);
-//   left: var(--offset);
-//   width: calc(var(--height) - (2 * var(--offset)));
-//   height: calc(var(--height) - 2 * var(--offset));
-//   background-color: var(--second-color);
-//   border-radius: 50%;
-// }
 
 .btn{
   color: $only-white;
@@ -169,4 +149,8 @@ a{
 
 .db{
   display: block;
+}
+
+.question-form{
+  padding: 110px 0;
 }

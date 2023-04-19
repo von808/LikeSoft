@@ -2,21 +2,30 @@ $garamond: 'Garamond', sans-serif;
 $inter: 'Inter', sans-serif;
 $gilroy: 'Gilroy', sans-serif;
 $only-white: #fff;
+$only-black: #06111C;
 $only-blue: #057AFF;
 $only-grey: #6A7077;
 $transparent: transparent;
-$only-black: #06111C;
 :root{
+  // only
   --var-only-blue:#057AFF;
-
+  // global
   --var-body-bg:#FFFFFF;
+  --var-btn-c: #057AFF;
+  // header
+  --var-white-header: #06111C;
+  --var-white-header-hover: rgba(6, 17, 28, 0.5);
+  --var-white-header-svg: #06111C;
+  // trust
   --var-trust-bg:#FAFAFA;
   --var-trust-title:#06111C;
   --var-trust-company:rgb(181, 182, 185);
+  // services
   --var-services-bg: #FFFFFF;
   --var-services-text: #06111C;
   --var-services-content-bg: transparent;
   --var-services-duration-slide-line: #057AFF;
+  // cases
   --var-case-light: flex;
   --var-case-dark: none;
   --var-case-info-width: 351px;
@@ -24,29 +33,42 @@ $only-black: #06111C;
   --var-cases-info-title:#06111C;
   --var-cases-info-stack-bg:#FAFAFA;
   --var-cases-info-stack:#6A7077;
+  //css
+  .white-header__logo{
+    filter: invert(1);
+  }
   --var-btn-c: #057AFF;
   --var-modal-bg: #14273A;
 }
 
 [dark]{
---var-body-bg:#06111C;
---var-trust-bg:#0D1D2E;
---var-trust-title:#FAFAFA;
---var-trust-company:rgb(54, 66, 78);
---var-services-bg: #06111C;
---var-services-text: #FFFFFF;
---var-services-content-bg: #0D1D2E;
---var-case-light: none;
---var-case-dark: flex;
---var-case-info-width: 549px;
---var-case-info-mr:-50px;
---var-cases-info-title:#FFFFFF;
---var-cases-info-stack-bg:#0D1D2E;
---var-cases-info-stack:#FFFFFF;
---var-btn-c: #057AFF;
-
-
-
+  // global
+  --var-body-bg:#06111C;
+  --var-btn-c: #FFFFFF;
+  // header
+  --var-white-header: #FFFFFF;
+  --var-white-header-hover: rgba(255, 255, 255, 0.5);
+  --var-white-header-svg: #FFFFFF;
+  // trust
+  --var-trust-bg:#0D1D2E;
+  --var-trust-title:#FAFAFA;
+  --var-trust-company:rgb(54, 66, 78);
+  // services
+  --var-services-bg: #06111C;
+  --var-services-text: #FFFFFF;
+  --var-services-content-bg: #0D1D2E;
+  // cases
+  --var-case-light: none;
+  --var-case-dark: flex;
+  --var-case-info-width: 549px;
+  --var-case-info-mr:-50px;
+  --var-cases-info-title:#FFFFFF;
+  --var-cases-info-stack-bg:#0D1D2E;
+  --var-cases-info-stack:#FFFFFF;
+  //css
+  .white-header__logo{
+    filter: invert(0);
+  }
 }
 
 // @media (prefers-color-scheme: dark){
