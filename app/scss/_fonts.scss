@@ -1,7 +1,7 @@
 @font-face{
   font-family: Inter;
   src: url(../fonts/Inter-LightBETA.woff2),
-  src url(../fonts/Inter-LightBETA.woff);
+       url(../fonts/Inter-LightBETA.woff);
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -9,7 +9,7 @@
 @font-face{
   font-family: Inter;
   src: url(../fonts/Inter-Regular.woff2),
-  src url(../fonts/Inter-Regular.woff);
+       url(../fonts/Inter-Regular.woff);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -17,7 +17,7 @@
 @font-face{
   font-family: Inter;
   src: url(../fonts/Inter-Medium.woff2),
-  src url(../fonts/Inter-Medium.woff);
+       url(../fonts/Inter-Medium.woff);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -25,7 +25,7 @@
 @font-face{
   font-family: Inter;
   src: url(../fonts/Inter-SemiBold.woff2),
-  src url(../fonts/Inter-SemiBold.woff);
+       url(../fonts/Inter-SemiBold.woff);
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -33,7 +33,7 @@
 @font-face{
   font-family: Inter;
   src: url(../fonts/Inter-Bold.woff2),
-  src url(../fonts/Inter-Bold.woff);
+       url(../fonts/Inter-Bold.woff);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -41,7 +41,7 @@
 @font-face{
   font-family: Garamond;
   src: url(../fonts/agaramondpro-regular-webfont.woff2),
-  src url(../fonts/agaramondpro-regular-webfont.woff);
+       url(../fonts/agaramondpro-regular-webfont.woff);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -49,7 +49,7 @@
 @font-face{
   font-family: Garamond;
   src: url(../fonts/agaramondpro-bold-webfont.woff2),
-  src url(../fonts/agaramondpro-bold-webfont.woff);
+       url(../fonts/agaramondpro-bold-webfont.woff);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -57,7 +57,7 @@
 @font-face{
   font-family: Gilroy;
   src: url(../fonts/gilroy-regular-webfont.woff2),
-  src url(../fonts/gilroy-regular-webfont.woff);
+       url(../fonts/gilroy-regular-webfont.woff);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -65,8 +65,16 @@
 @font-face{
   font-family: Gilroy;
   src: url(../fonts/gilroy-medium-webfont.woff2),
-  src url(../fonts/gilroy-medium-webfont.woff);
+       url(../fonts/gilroy-medium-webfont.woff);
   font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face{
+  font-family: Work;
+  src: url(../fonts/worksans-light-webfont.woff2),
+       url(../fonts/worksans-light-webfont.woff);
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
