@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LikeSoft</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -549,41 +549,38 @@
             <use href="#close"></use>
           </svg>
         </button>
-  
         <div class="modal__inner">
-
           <h3 class="modal__title">Ask your question to our specialists</h3>
-
           <form action="post" class="modal__form">
-            <div class="modal__form-contacts">
-              <div class="modal__contacts-item">
-                <span class="modal__form-name">Your name<span class="onlyblue-text">*</span></span>
-                <input type="text" class="modal__form-item" placeholder="Name">
+            <div class="modal__main">
+              <div class="modal__form-contacts">
+                <div class="modal__contacts-item">
+                  <span class="modal__form-name">Your name<span class="onlyblue-text">*</span></span>
+                  <input type="text" class="modal__form-item" placeholder="Name">
+                </div>
+                <div class="modal__contacts-item">
+                  <span class="modal__form-name">Phone<span class="onlyblue-text">*</span></span>
+                  <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
+                </div>
+                <div class="modal__contacts-item">
+                  <span class="modal__form-name">Mail<span class="onlyblue-text">*</span></span>
+                  <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+                </div>
               </div>
-              <div class="modal__contacts-item">
-                <span class="modal__form-name">Phone<span class="onlyblue-text">*</span></span>
-                <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
-              </div>
-              <div class="modal__contacts-item">
-                <span class="modal__form-name">Mail<span class="onlyblue-text">*</span></span>
-                <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+              <div class="modal__form-message">
+                <div class="modal__contacts-item">
+                  <span class="modal__form-name">Message<span class="onlyblue-text">*</span></span>
+                  <textarea name="message" class="modal__form-item modal__form-item--textarea" placeholder="Enter your message"></textarea>
+                </div>
               </div>
             </div>
-            <div class="modal__form-message">
-              <div class="modal__contacts-item">
-                <span class="modal__form-name">Message<span class="onlyblue-text">*</span></span>
-                <textarea name="message" class="modal__form-item modal__form-item--textarea" placeholder="Enter your message"></textarea>
-              </div>
+            <div class="modal__bottom">
+              <p class="modal__agreement">
+                By clicking on the button, I agree to <a class="onlyblue-text" href="#">the processing of personal data</a>
+              </p>
+              <button class="btn" type="submit" href="#">contact us</button>
             </div>
           </form>
-
-          <div class="modal__bottom">
-            <p class="modal__agreement">
-              By clicking on the button, I agree to <a class="onlyblue-text">the processing of personal data</a>
-            </p>
-            <a href="#" class="btn">contact us</a>
-          </div>
-
         </div>
       </div>
     </div>
