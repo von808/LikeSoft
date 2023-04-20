@@ -77,7 +77,7 @@
               <p class="intro__text">
                 LikeSoft is a custom software development company providing nearshore dedicated teams for VC-backed startups and fast-growing tech companies.
               </p>
-              <a class="btn" href="#" data-modal="contact-modal">Ready to grow?</a>
+              <button type="button" class="btn" data-modal="contact-modal">Ready to grow?</button>
             </div>
             <div class="intro__map">
               <div class="map__point map__point--1">
@@ -305,7 +305,7 @@
                   </p>
                 </li>
               </ul>
-              <a class="btn btn--c" href="#">Let’s meet!</a>
+              <button type="button" class="btn btn--c" data-modal="contact-modal">Let’s meet!</button>
             </div>
           </div>
         </div>
@@ -443,7 +443,7 @@
                 <h2 class="technologies__info-title">But we can also <span class="onlyblue-text db">help you with:</span></h2>
                 <p class="technologies__info-lang">C, C++, C#, MQL</p>
               </div>
-              <a class="btn" href="#">Contact</a>
+              <button type="button" class="btn" data-modal="contact-modal">Contact</button>
             </div>
           </div>
         </div>
@@ -550,23 +550,40 @@
           </svg>
         </button>
   
-        <div class="modal__block">
-          <div class="modal__title">
-            Ask your question to our specialists
-          </div>
+        <div class="modal__inner">
+
+          <h3 class="modal__title">Ask your question to our specialists</h3>
+
           <form action="post" class="modal__form">
-            <div class="input">
-              <input type="text" class="modal__form-item" placeholder="Name">
-              <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
-              <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+            <div class="modal__form-contacts">
+              <div class="modal__contacts-item">
+                <span class="modal__form-name">Your name<span class="onlyblue-text">*</span></span>
+                <input type="text" class="modal__form-item" placeholder="Name">
+              </div>
+              <div class="modal__contacts-item">
+                <span class="modal__form-name">Phone<span class="onlyblue-text">*</span></span>
+                <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
+              </div>
+              <div class="modal__contacts-item">
+                <span class="modal__form-name">Mail<span class="onlyblue-text">*</span></span>
+                <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+              </div>
             </div>
-            <div class="textarea">
-              <textarea name="" id="" cols="30" rows="10" class="modal__form-item" placeholder="Enter your message"></textarea>
+            <div class="modal__form-message">
+              <div class="modal__contacts-item">
+                <span class="modal__form-name">Message<span class="onlyblue-text">*</span></span>
+                <textarea name="message" class="modal__form-item modal__form-item--textarea" placeholder="Enter your message"></textarea>
+              </div>
             </div>
           </form>
-          <p class="modal__subtitle">
-            By clicking on the button, I agree to <span class="onlyblue-text">the processing of personal data</span>
-          </p>
+
+          <div class="modal__bottom">
+            <p class="modal__agreement">
+              By clicking on the button, I agree to <a class="onlyblue-text">the processing of personal data</a>
+            </p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
         </div>
       </div>
     </div>
