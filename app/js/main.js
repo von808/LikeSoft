@@ -84,4 +84,10 @@ $(function () {
 		}, 200);
 	}
 
+	var mixer = mixitup('.tabs__inner', {
+    load: {
+      filter: '.education'
+    }
+  });
+
 })
