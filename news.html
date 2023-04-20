@@ -66,36 +66,87 @@
       <section class="news-page">
         <div class="container">
           <div class="news-page__inner">
-            <div class="row">
+
+            <div class="row-right">
+
               <h2 class="news-page__title">LikeSoft Blog</h2>
               <p class="news-page__subtitle">Design. Engineering. Lessons learned on our journey.</p>
-              <div class="news-page__content">
-                <div class="news">
-                  <div class="news__hashtag">
-                    # Development
-                  </div>
-                  <div class="news__title">
-                    Get Flutter's offline support in Supabase
-                  </div>
-                  <div class="news__block">
-                    <div class="news__block-author">
-                      <img src="" alt="">
-                      <div>
-                        <h3>By Matías Irland</h3>
-                        <p>Sep 13, 2022</p>
-                      </div>
-                    </div>
-                    <p>
-                      <span class="onlyblue-text">Supabase</span> is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many <span class="onlyblue-text">Firebase</span> features, one that I constantly crave is offline support for the real-time database.
-                    </p>
-                    <p>
-                      In this blog post, we’ll cover how you can use a local database as a <span class="onlyblue-text">Supabase</span> cache through <span class="onlyblue-text">Stock</span>, a dart package that combines multiple data sources and gets one data . However, you can apply these concepts and ideas to diverse situations, such as adding offline support when using a Rest API.To show how we can achieve that, we’ll create a simple app that lists all of Xmartlabs’ open-source projects, demonstrating how Stock helps us achieve excellent results.
-                    </p>
+
+              <div class="news">
+                <a href="#" class="news__hashtag">
+                  # Development
+                </a>
+                <div class="news__title">
+                  Get Flutter's offline support in Supabase
+                </div>
+                <div class="news__author">
+                  <img class="news__author-photo" src="images/news page/photo.png" alt="">
+                  <div class="news__author-data">
+                    <h3 class="news__author-name">By Matías Irland</h3>
+                    <p class="news__author-date">Sep 13, 2022</p>
                   </div>
                 </div>
+                <p class="news__text">
+                  <a href="#" class="onlyblue-text">Supabase</a> is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many <a href="#" class="onlyblue-text">Firebase</a> features, one that I constantly crave is offline support for the real-time database.
+                </p>
+                <p class="news__text">
+                  In this blog post, we’ll cover how you can use a local database as a <a href="#" class="onlyblue-text">Supabase</a> cache through <a href="#" class="onlyblue-text">Stock</a>, a dart package that combines multiple data sources and gets one data . However, you can apply these concepts and ideas to diverse situations, such as adding offline support when using a Rest API.To show how we can achieve that, we’ll create a simple app that lists all of Xmartlabs’ open-source projects, demonstrating how Stock helps us achieve excellent results.
+                </p>
+
+                <div class="news__title">
+                  Architecture Overview
+                </div>
+                <p class="news__text">
+                  Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.
+                </p>
+                <p class="news__text">
+                  We’ll have two data sources, a remote and a local data source, which <a href="#" class="onlyblue-text">Stock</a> will combine in the repository.
+                </p>
+                <p class="news__text">
+                  Because we want to use the real-time database, we’ll use the [Supabase Flutter package]. Although the package provides many features, you can use Supabase as a REST API.
+                </p>
+                <p class="news__text">
+                  Your local database will store this data. In our case, we’ll use <a href="#" class="onlyblue-text">Floor</a> because it’s simple and has many features. If you’d prefer to use another one, there are a bunch of alternatives, such as <a href="#" class="onlyblue-text">Drift</a> or <a href="#" class="onlyblue-text">Realm</a>, you can use.
+                </p>
+
+                <img class="news__preview" src="images/blog page/arch-overview-1.png" alt="">
+
+                <div class="news__title">
+                  Architecture Overview
+                </div>
+                <div class="news__content">
+                  <ul class="news__content-list">
+                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  </ul>
+                </div>
+
+                <img class="news__preview" src="images/blog page/arch-overview-2.png" alt="">
+
+                <div class="news__content">
+                  <ul class="news__content-list">
+                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  </ul>
+                </div>
+
+                <img class="news__preview" src="images/news page/arch_overview.png" alt="">
+
+              </div>
+
+              <div class="news__title">
+                More From Xmartlabs Blog
+              </div>
+              <div class="news__rec">
+                
               </div>
             </div>
-            <div class="row">
+
+            <aside class="row-left">
               <div class="sidebar">
                 <div class="sidebar__title">
                   Let's talk
@@ -103,9 +154,10 @@
                 <div class="sidebar__subtitle">
                   Interested in how we can help you?
                 </div>
-                <a class="btn" href="#"></a>
+                <a class="btn btn--c" href="#">Get in touch</a>
               </div>
-            </div>
+            </aside>
+          </div>
         </div>
       </section>
 
