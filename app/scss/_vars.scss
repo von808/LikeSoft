@@ -1,7 +1,8 @@
 $garamond: 'Garamond', sans-serif;
 $inter: 'Inter', sans-serif;
 $gilroy: 'Gilroy', sans-serif;
-$only-white: #fff;
+$work: 'Work', sans-serif;
+$only-white: #FFFFFF;
 $only-black: #06111C;
 $only-blue: #057AFF;
 $only-grey: #6A7077;
@@ -35,7 +36,9 @@ $transparent: transparent;
   --var-cases-info-stack:#6A7077;
   //modal
   --var-modal-bg: #14273A;
-  //
+  //blog
+  --var-blog-text: #06111C;
+
 
 
 
@@ -71,6 +74,12 @@ $transparent: transparent;
   --var-cases-info-title:#FFFFFF;
   --var-cases-info-stack-bg:#0D1D2E;
   --var-cases-info-stack:#FFFFFF;
+  //blog
+  --var-blog-text: #FFFFFF;
+
+
+
+
   //css
   .white-header__logo{
     filter: invert(0);
