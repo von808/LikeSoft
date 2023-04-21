@@ -31,6 +31,16 @@ $(function () {
 		slidesToShow: 4,
 		slidesToScroll: 4
 	});
+	$('.revievs__slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: true,
+		adaptiveHeight: false,
+		centerMode: false,
+		variableWidth: true
+	});
 	$('.services__dots').slick({
 		slidesToShow: 4,
 		slidesToScroll: 4,
