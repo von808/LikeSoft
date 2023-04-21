@@ -1028,7 +1028,7 @@
   }
 }
 /* /Blog Page */
-/* News */
+/* News page */
 .news-page{
   padding: 110px 0 0 0;
   &__inner{
@@ -1176,6 +1176,152 @@
     }
   }
 }
+/* /News page */
+/* About us page */
+.about{
+  padding: 110px 0 187px 0;
+  &__inner{
+
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 590px;
+    width: 100%;
+  }
+  &__title{
+    font-family: $garamond;
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+  &__poster{
+    position: relative;
+    width: 480px;
+    height: 577px;
+    &::after{
+      content: "";
+      width: 259px;
+      height: 298px;
+      background: $only-blue;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  &__image{
+    position: relative;
+    z-index: 2;
+    width: 441px;
+    height: 537px;
+  }
+}
+.values{
+  margin-bottom: 135px;
+  &__content{
+    text-align: center;
+  }
+  &__content-top{
+    margin: 0 auto;
+    max-width: 633px;
+  }
+  &__title{
+    font-family: $garamond;
+    font-size: 52px;
+    line-height: 62px;
+  }
+  &__subtitle{
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+  &__features{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  &__features-item{
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__features-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $only-blue;
+    margin-bottom: 24px;
+    font-family: $garamond;
+    font-size: 34px;
+    line-height: 37px;
+    color: $only-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__features-title{
+    margin-bottom: 9px;
+  }
+}
+.team{
+  margin-bottom: 110px;
+  &__inner{
+    text-align: center;
+  }
+  &__content{
+
+  }
+  &__title{
+    font-family: $garamond;
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 60px;
+  }
+  &__text{
+    font-family: $inter;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 916px;
+    margin: 0 auto;
+  }
+}
+.slider{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 60px;
+  &__item{
+    text-align: left;
+    width: 271px;
+    font-family: $gilroy;
+    &-photo{
+      height: 280px;
+      margin-bottom: 20px;
+    }
+    &-name{
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 8px;
+    }
+    &-post{
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+/* /About us */
 /* Modal ===================*/
 body.lock {
   overflow: hidden;

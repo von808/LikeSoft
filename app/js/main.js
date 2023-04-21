@@ -26,6 +26,11 @@ $(function () {
 		autoplaySpeed: 3000,
 		asNavFor: '.services__dots',
 	});
+	$('.slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4
+	});
 	$('.services__dots').slick({
 		slidesToShow: 4,
 		slidesToScroll: 4,
