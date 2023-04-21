@@ -866,6 +866,158 @@
   color: $only-white;
   background-color: $only-blue;
 }
+
+// Case-studio inner-page ============================================================
+.inner-case-studio{
+  padding: 170px 0 110px;
+  &__title{
+    font-family: $garamond;
+    font-size: 52px;
+    line-height: 120%;
+    color: var(--var-inner-case-studio-title);
+    text-align: center;
+    h2{
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: $inter;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 60px;
+  }
+  &__item{
+    max-width: 589px;
+    width: 100%;
+    height: 447px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+  }
+  &__item-content{
+    padding: 40px;
+    .case__stack-item{
+      background-color: $transparent;
+    }
+    &--1{
+      color: $only-black;
+      .case__stack-item{
+        opacity: 0.5;
+        color: $only-black;
+        border: 1px solid $only-black;
+      }
+    }
+    &--2{
+      color: $only-white;
+      .case__stack-item{
+        opacity: 0.5;
+        color: $only-white;
+        border: 1px solid $only-lightgrey;
+      }
+    }
+  }
+  &__item-title{
+    font-family: $garamond;
+    font-size: 28px;
+    line-height: 110%;
+    margin-bottom: 15px;
+  }
+}
+
+// Case-studio ============================================================
+.case-studio{
+  &__black{
+    background-color: $only-black;
+    padding: 200px 0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 200px;
+      width: 1px;
+      height: 86.4%;
+      background-color: $only-lightgrey;
+      opacity: .1;
+    }
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+  }
+  &__items-case{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__item-card{
+    background-image: url(../images/case-studio/card-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border-radius: 10px;
+    width: 466px;
+    height: 312px;
+  }
+  &__item-info{
+    max-width: 468px;
+  }
+  &__item-title{
+    color: $only-white;
+    margin-bottom: 20px;
+  }
+  &__item-text{
+    font-family: $inter;
+    color: $only-white;
+    font-size: 16px;
+    line-height: 150%;
+    p:not(:last-child){
+      margin-bottom: 24px;
+    }
+  }
+  &__white{
+    padding: 215px 0 140px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 140px;
+      width: 1px;
+      height: 86.3%;
+      background-color: var(--var-case-studio-black-line);
+      opacity: .1;
+    }
+    .case-studio__item-title,
+    .case-studio__item-text{
+      color: var(--var-case-studio-black-text);
+    }
+  }
+  &__text{
+    padding: 80px 0;
+  }
+  &__text-inner{
+    max-width: 712px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--var-case-studio-black-text);
+    p:not(:last-child){
+      margin-bottom: 24px;
+    }
+  }
+}
+
 /* Services Page */
 .services-page{
   background-color: var(--var-services-bg);
@@ -913,7 +1065,6 @@
     padding: 30px 0 0 40px;
   }
 }
-/* /Services Page */
 /* Blog Page */
 .blog-page{
   background-color: var(--var-services-bg);

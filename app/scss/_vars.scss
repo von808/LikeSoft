@@ -3,10 +3,12 @@ $inter: 'Inter', sans-serif;
 $gilroy: 'Gilroy', sans-serif;
 $work: 'Work', sans-serif;
 $only-white: #FFFFFF;
+$only-lightgrey: #FAFAFA;
 $only-black: #06111C;
 $only-blue: #057AFF;
 $only-grey: #6A7077;
 $transparent: transparent;
+$black: #000;
 :root{
   // only
   --var-only-blue:#057AFF;
@@ -42,9 +44,11 @@ $transparent: transparent;
   --var-blog-text: #06111C;
   //industries
   --var-industries-text: #06111C;
-
-
-
+  //case-studio-inner-page
+  --var-inner-case-studio-title: #06111C;
+  //case-studio
+  --var-case-studio-black-text: #06111C;
+  --var-case-studio-black-line: #06111C;
 
 
 
@@ -82,7 +86,11 @@ $transparent: transparent;
   --var-blog-text: #FFFFFF;
   //industries
   --var-industries-text: #FFFFFF;
-
+  //case-studio-inner-page
+  --var-inner-case-studio-title: #FFFFFF;
+  //case-studio
+  --var-case-studio-black-text: #FFFFFF;
+  --var-case-studio-black-line: #FAFAFA;
 
 
 

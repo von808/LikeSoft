@@ -41,6 +41,12 @@ a{
   padding: 0 10px;
 }
 
+.title-garamond{
+  font-family: $garamond;
+  font-size: 52px;
+  line-height: 120%;
+}
+
 .checkbox{
   cursor: pointer;
   position: relative;
