@@ -1892,146 +1892,149 @@
     text-align: center;
   }
 
-  /* /Media */
-  /* Modal ===================*/
-  body.lock {
-    overflow: hidden;
+}
+/* /Media */
+/* Modal ===================*/
+body.lock {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba($only-black, 0.45);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+
+  &__content {
+    max-width: 1200px;
+    width: 100%;
+    max-height: 463px;
+    padding: 32px 48px 40px;
+    position: relative;
+    background-color: var(--var-modal-bg);
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    overflow: auto;
   }
 
-  .modal {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  &__close {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+
+    &:hover .close {
+      transition: 0.1s linear;
+      opacity: 1;
+    }
+  }
+
+  .close {
+    fill: #fff;
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    background-color: rgba($only-black, 0.45);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1010;
-
-    &__content {
-      max-width: 1200px;
-      width: 100%;
-      max-height: 463px;
-      padding: 32px 48px 40px;
-      position: relative;
-      background-color: var(--var-modal-bg);
-      border-radius: 5px;
-      opacity: 0;
-      transform: translateY(-50px);
-      transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
-      overflow: auto;
-    }
-
-    &__close {
-      padding: 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      width: 40px;
-      height: 40px;
-
-      &:hover .close {
-        transition: 0.1s linear;
-        opacity: 1;
-      }
-    }
-
-    .close {
-      fill: #fff;
-      width: 100%;
-      height: 100%;
-      padding: 10px;
-      opacity: 0.7;
-    }
-
-    &__inner {
-      width: 100%;
-      height: 100%;
-      color: $only-white;
-    }
-
-    &__title {
-      font-family: $garamond;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 31px;
-      color: $only-white;
-      margin-bottom: 28px;
-    }
-
-    &__form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__main {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 27px;
-    }
-
-    &__form-contacts {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      width: 34.78%;
-    }
-
-    &__contacts-item {
-      height: 100%;
-    }
-
-    &__form-message {
-      width: 63%;
-    }
-
-    &__form-item {
-      padding: 16px;
-      background-color: rgba($only-black, 0.6);
-      width: 100%;
-      resize: none;
-      color: $only-white;
-      font-family: $inter;
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    &__form-item--textarea {
-      height: 93%;
-    }
-
-    &__bottom {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__agreement {
-      font-family: $gilroy;
-      font-size: 16px;
-      line-height: 16px;
-      color: $only-white;
-      padding-top: 17px;
-    }
-
-    &__form-name {
-      font-family: $inter;
-      font-size: 12px;
-      line-height: 18px;
-      color: $only-grey;
-      padding-bottom: 2px;
-    }
+    padding: 10px;
+    opacity: 0.7;
   }
 
-  .modal.show {
+  &__inner {
+    width: 100%;
+    height: 100%;
+    color: $only-white;
+  }
+
+  &__title {
+    font-family: $garamond;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 31px;
+    color: $only-white;
+    margin-bottom: 28px;
+  }
+
+  &__form {
     display: flex;
+    flex-direction: column;
   }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+  }
+
+  &__form-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 34.78%;
+  }
+
+  &__contacts-item {
+    height: 100%;
+  }
+
+  &__form-message {
+    width: 63%;
+  }
+
+  &__form-item {
+    padding: 16px;
+    background-color: rgba($only-black, 0.6);
+    width: 100%;
+    resize: none;
+    color: $only-white;
+    font-family: $inter;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__form-item--textarea {
+    height: 93%;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__agreement {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 16px;
+    color: $only-white;
+    padding-top: 17px;
+  }
+
+  &__form-name {
+    font-family: $inter;
+    font-size: 12px;
+    line-height: 18px;
+    color: $only-grey;
+    padding-bottom: 2px;
+  }
+}
+
+.modal.show {
+  display: flex;
+}
+body.lock {
+  overflow: hidden;
 }
 
 
