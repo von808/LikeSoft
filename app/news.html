@@ -63,86 +63,114 @@
     </header>
     <main class="main">
 
-      <section class="news-page">
+      <section class="news">
         <div class="container">
-          <div class="news-page__inner">
+          <div class="news__inner">
 
             <div class="row-right">
 
-              <h2 class="news-page__title">LikeSoft Blog</h2>
-              <p class="news-page__subtitle">Design. Engineering. Lessons learned on our journey.</p>
+              <h2 class="news__title">LikeSoft Blog</h2>
+              <p class="news__subtitle">Design. Engineering. Lessons learned on our journey.</p>
 
-              <div class="news">
-                <a href="#" class="news__hashtag">
+              <div class="news__blog">
+                <a href="#" class="news__blog-hashtag">
                   # Development
                 </a>
-                <div class="news__title">
+                <div class="news__blog-title">
                   Get Flutter's offline support in Supabase
                 </div>
-                <div class="news__author">
+                <div class="news__blog-author">
                   <img class="news__author-photo" src="images/news page/photo.png" alt="">
                   <div class="news__author-data">
                     <h3 class="news__author-name">By Matías Irland</h3>
                     <p class="news__author-date">Sep 13, 2022</p>
                   </div>
                 </div>
-                <p class="news__text">
+                <p class="news__blog-text">
                   <a href="#" class="onlyblue-text">Supabase</a> is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many <a href="#" class="onlyblue-text">Firebase</a> features, one that I constantly crave is offline support for the real-time database.
                 </p>
-                <p class="news__text">
+                <p class="news__blog-text">
                   In this blog post, we’ll cover how you can use a local database as a <a href="#" class="onlyblue-text">Supabase</a> cache through <a href="#" class="onlyblue-text">Stock</a>, a dart package that combines multiple data sources and gets one data . However, you can apply these concepts and ideas to diverse situations, such as adding offline support when using a Rest API.To show how we can achieve that, we’ll create a simple app that lists all of Xmartlabs’ open-source projects, demonstrating how Stock helps us achieve excellent results.
                 </p>
 
-                <div class="news__title">
+                <div class="news__blog-title">
                   Architecture Overview
                 </div>
-                <p class="news__text">
+                <p class="news__blog-text">
                   Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.
                 </p>
-                <p class="news__text">
+                <p class="news__blog-text">
                   We’ll have two data sources, a remote and a local data source, which <a href="#" class="onlyblue-text">Stock</a> will combine in the repository.
                 </p>
-                <p class="news__text">
+                <p class="news__blog-text">
                   Because we want to use the real-time database, we’ll use the [Supabase Flutter package]. Although the package provides many features, you can use Supabase as a REST API.
                 </p>
-                <p class="news__text">
+                <p class="news__blog-text">
                   Your local database will store this data. In our case, we’ll use <a href="#" class="onlyblue-text">Floor</a> because it’s simple and has many features. If you’d prefer to use another one, there are a bunch of alternatives, such as <a href="#" class="onlyblue-text">Drift</a> or <a href="#" class="onlyblue-text">Realm</a>, you can use.
                 </p>
 
-                <img class="news__preview" src="images/blog page/arch-overview-1.png" alt="">
+                <img class="news__blog-preview" src="images/blog page/arch-overview-1.png" alt="">
 
-                <div class="news__title">
+                <div class="news__blog-title">
                   Architecture Overview
                 </div>
-                <div class="news__content">
-                  <ul class="news__content-list">
-                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  </ul>
-                </div>
+                <ul class="news__blog-list">
+                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                </ul>
 
-                <img class="news__preview" src="images/blog page/arch-overview-2.png" alt="">
+                <img class="news__blog-preview" src="images/blog page/arch-overview-2.png" alt="">
 
-                <div class="news__content">
-                  <ul class="news__content-list">
-                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                    <li class="news__content-decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  </ul>
-                </div>
+                <ul class="news__blog-list">
+                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
+                </ul>
 
-                <img class="news__preview" src="images/news page/arch_overview.png" alt="">
+                <img class="news__blog-preview" src="images/news page/arch_overview.png" alt="">
 
               </div>
 
-              <div class="news__title">
+              <div class="news__blog-title">
                 More From Xmartlabs Blog
               </div>
-              <div class="news__rec">
-                
+              <div class="blog__rec">
+                <div class="blog__rec-item">
+                  <img class="blog__rec-preview" src="images/blog page/arch-overview-1.png" alt="">
+                  <div class="blog__rec-content">
+                    <a class="blog__rec-hashtag" href="#"># Development</a>
+                    <p class="blog__rec-date" data-="18"="11"="2022">Oct 5, 2022</p>
+                    <div class="blog__rec-title">
+                      Introducing stock
+                    </div>
+                    <p class="blog__rec-text">
+                      October is a special month for Open Source contributors thanks to Hacktoberfest taking place. In this wonderful month, we...
+                    </p>
+                    <a class="blog__rec-author" href="#">
+                      By Matías Irland
+                    </a>
+                  </div>
+                </div>
+
+                <div class="blog__rec-item">
+                  <img class="blog__rec-preview" src="images/blog page/arch-overview-2.png" alt="">
+                  <div class="blog__rec-content">
+                    <a class="blog__rec-hashtag" href="#"># Development</a>
+                    <p class="blog__rec-date" data-="18"="11"="2022">Sep 29, 2022</p>
+                    <div class="blog__rec-title">
+                      The importance QA in the development process
+                    </div>
+                    <p class="blog__rec-text">
+                      Would you deliver an untested product to a customer? That’s a question every single company should be asking. When developing...
+                    </p>
+                    <a class="blog__rec-author" href="#">
+                      By Sofia Techera
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
