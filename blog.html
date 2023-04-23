@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Blog</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,23 +16,23 @@
         <div class="header__inner">
           <div class="header__left">
             <div class="logo header__logo white-header__logo">
-              <a class="logo-link" href="#">
+              <a class="logo-link" href="https://von808.github.io/LikeSoft">
                 <img class="logo-img" src="images/logo.svg" alt="logo">
               </a>
             </div>
             <nav class="nav">
               <ul class="nav__menu">
                 <li class="nav__item header__nav-item">
-                  <a href="" class="nav__item-link">Industries</a>
+                  <a href="https://von808.github.io/LikeSoft/industries" class="nav__item-link">Industries</a>
                 </li>
                 <li class="nav__item header__nav-item">
-                  <a href="" class="nav__item-link">Resources and Library</a>
+                  <a href="" class="nav__item-link nav__item-link--active">Resources and Library</a>
                 </li>
                 <li class="nav__item header__nav-item">
-                  <a href="" class="nav__item-link">Services</a>
+                  <a href="https://von808.github.io/LikeSoft/services" class="nav__item-link">Services</a>
                 </li>
                 <li class="nav__item header__nav-item">
-                  <a href="" class="nav__item-link">About us</a>
+                  <a href="https://von808.github.io/LikeSoft/about-us" class="nav__item-link">About us</a>
                 </li>
               </ul>
             </nav>
@@ -63,58 +63,60 @@
     </header>
     <main class="main">
 
-      <section class="blog-page">
+      <section class="blog">
         <div class="container">
-          <div class="blog-page__inner">
-            <h2 class="blog-page__title">LikeSoft Blog</h2>
-            <p class="blog-page__subtitle">Design. Engineering. Lessons learned on our journey.</p>
-            <div class="blog-page__content">
+          <div class="blog__inner">
+            <h2 class="blog__title">LikeSoft Blog</h2>
+            <p class="blog__subtitle">Design. Engineering. Lessons learned on our journey.</p>
+            <div class="blog__content">
               
-              <div class="blog">
-                <img class="blog__preview" src="images/blog page/arch-overview-1.png" alt="">
-                <div class="blog__content">
-                  <a class="blog__hashtag" href="#"># Development</a>
-                  <p class="blog__data" data-="18"="11"="2022">Nov 18, 2022</p>
-                  <div class="blog__title-main">
+              <div class="blog__item">
+                <img class="blog__item-preview" src="images/blog page/arch-overview-1.png" alt="">
+                <div class="blog__item-content">
+                  <a class="blog__item-hashtag" href="#"># Development</a>
+                  <p class="blog__item-date" data-="18"="11"="2022">Nov 18, 2022</p>
+                  <div class="blog__item-title">
                     How your business can take advantage of Big Data
                   </div>
-                  <p class="blog-main__text">
+                  <p class="blog__item-text">
                     Businesses and startups are constantly increasing in quantity, so the search for distinguishing from competitors and looking for competitive advantage is more critical than ever. Big Data and Analytics have presented themselves as one of the most effective ways to...
                   </p>
-                  <a class="blog__author" href="#">
+                  <a class="blog__item-author" href="#">
                     By Joaquín Sánchez
                   </a>
                 </div>
               </div>
+
               <div class="blog__rec">
-                <div class="blog">
-                  <img class="blog__preview" src="images/blog page/arch-overview-1.png" alt="">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Oct 5, 2022</p>
-                    <div class="blog__title-secondary">
+                <div class="blog__rec-item">
+                  <img class="blog__rec-preview" src="images/blog page/arch-overview-1.png" alt="">
+                  <div class="blog__rec-content">
+                    <a class="blog__rec-hashtag" href="#"># Development</a>
+                    <p class="blog__rec-date" data-="18"="11"="2022">Oct 5, 2022</p>
+                    <div class="blog__rec-title">
                       Introducing stock
                     </div>
-                    <p class="blog-main__text">
+                    <p class="blog__rec-text">
                       October is a special month for Open Source contributors thanks to Hacktoberfest taking place. In this wonderful month, we...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__rec-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
-                <div class="blog">
-                  <img class="blog__preview" src="images/blog page/arch-overview-2.png" alt="">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 29, 2022</p>
-                    <div class="blog__title-secondary">
+
+                <div class="blog__rec-item">
+                  <img class="blog__rec-preview" src="images/blog page/arch-overview-2.png" alt="">
+                  <div class="blog__rec-content">
+                    <a class="blog__rec-hashtag" href="#"># Development</a>
+                    <p class="blog__rec-date" data-="18"="11"="2022">Sep 29, 2022</p>
+                    <div class="blog__rec-title">
                       The importance QA in the development process
                     </div>
-                    <p class="blog-main__text">
+                    <p class="blog__rec-text">
                       Would you deliver an untested product to a customer? That’s a question every single company should be asking. When developing...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__rec-author" href="#">
                       By Sofia Techera
                     </a>
                   </div>
@@ -122,81 +124,87 @@
               </div>
 
               <div class="blog__list">
-                <div class="blog">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 13, 2022</p>
-                    <div class="blog__title-other">
+                
+                <div class="blog__list-item">
+                  <div class="blog__list-content">
+                    <a class="blog__list-hashtag" href="#"># Development</a>
+                    <p class="blog__list-date" data-="18"="11"="2022">Sep 13, 2022</p>
+                    <div class="blog__list-title">
                       Get Flutter's offline support in Supabase
                     </div>
-                    <p class="blog__text">
+                    <p class="blog__list-text">
                       Supabase is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many Firebase features, one that I constantly crave is offline support for the real-time database. In this blog post, we’ll cover how you can...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__list-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
-                <div class="blog">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 13, 2022</p>
-                    <div class="blog__title-other">
+
+                <div class="blog__list-item">
+                  <div class="blog__list-content">
+                    <a class="blog__list-hashtag" href="#"># Development</a>
+                    <p class="blog__list-date" data-="18"="11"="2022">Sep 13, 2022</p>
+                    <div class="blog__list-title">
                       Get Flutter's offline support in Supabase
                     </div>
-                    <p class="blog__text">
+                    <p class="blog__list-text">
                       Supabase is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many Firebase features, one that I constantly crave is offline support for the real-time database. In this blog post, we’ll cover how you can...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__list-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
-                <div class="blog">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 13, 2022</p>
-                    <div class="blog__title-other">
+                
+                <div class="blog__list-item">
+                  <div class="blog__list-content">
+                    <a class="blog__list-hashtag" href="#"># Development</a>
+                    <p class="blog__list-date" data-="18"="11"="2022">Sep 13, 2022</p>
+                    <div class="blog__list-title">
                       Get Flutter's offline support in Supabase
                     </div>
-                    <p class="blog__text">
+                    <p class="blog__list-text">
                       Supabase is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many Firebase features, one that I constantly crave is offline support for the real-time database. In this blog post, we’ll cover how you can...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__list-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
-                <div class="blog">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 13, 2022</p>
-                    <div class="blog__title-other">
+
+                <div class="blog__list-item">
+                  <div class="blog__list-content">
+                    <a class="blog__list-hashtag" href="#"># Development</a>
+                    <p class="blog__list-date" data-="18"="11"="2022">Sep 13, 2022</p>
+                    <div class="blog__list-title">
                       Get Flutter's offline support in Supabase
                     </div>
-                    <p class="blog__text">
+                    <p class="blog__list-text">
                       Supabase is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many Firebase features, one that I constantly crave is offline support for the real-time database. In this blog post, we’ll cover how you can...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__list-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
-                <div class="blog">
-                  <div class="blog__content">
-                    <a class="blog__hashtag" href="#"># Development</a>
-                    <p class="blog__data" data-="18"="11"="2022">Sep 13, 2022</p>
-                    <div class="blog__title-other">
+                
+                <div class="blog__list-item">
+                  <div class="blog__list-content">
+                    <a class="blog__list-hashtag" href="#"># Development</a>
+                    <p class="blog__list-date" data-="18"="11"="2022">Sep 13, 2022</p>
+                    <div class="blog__list-title">
                       Get Flutter's offline support in Supabase
                     </div>
-                    <p class="blog__text">
+                    <p class="blog__list-text">
                       Supabase is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many Firebase features, one that I constantly crave is offline support for the real-time database. In this blog post, we’ll cover how you can...
                     </p>
-                    <a class="blog__author" href="#">
+                    <a class="blog__list-author" href="#">
                       By Matías Irland
                     </a>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -210,7 +218,7 @@
           <div class="footer__left">
             <div class="footer__contacts">
               <div class="logo footer__logo">
-                <a class="logo-link" href="#">
+                <a class="logo-link" href="https://von808.github.io/LikeSoft">
                   <img class="logo-img" src="images/logo.svg" alt="logo">
                 </a>
               </div>
@@ -265,16 +273,16 @@
               <h2 class="footer__nav-title">Navigation</h2>
               <ul class="nav__menu footer__nav-menu">
                 <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">Industries</a>
+                  <a href="https://von808.github.io/LikeSoft/industries" class="nav__item-link">Industries</a>
                 </li>
                 <li class="nav__item footer__nav-item">
                   <a href="" class="nav__item-link">Resources and Library</a>
                 </li>
                 <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">Services</a>
+                  <a href="https://von808.github.io/LikeSoft/services" class="nav__item-link">Services</a>
                 </li>
                 <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">About us</a>
+                  <a href="https://von808.github.io/LikeSoft/about-us" class="nav__item-link">About us</a>
                 </li>
               </ul>
             </nav>

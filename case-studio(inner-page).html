@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News</title>
+  <title>Case studio</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -26,7 +26,7 @@
                   <a href="https://von808.github.io/LikeSoft/industries" class="nav__item-link">Industries</a>
                 </li>
                 <li class="nav__item header__nav-item">
-                  <a href="https://von808.github.io/LikeSoft/blog" class="nav__item-link nav__item-link--active">Resources and Library</a>
+                  <a href="https://von808.github.io/LikeSoft/blog" class="nav__item-link">Resources and Library</a>
                 </li>
                 <li class="nav__item header__nav-item">
                   <a href="https://von808.github.io/LikeSoft/services" class="nav__item-link">Services</a>
@@ -62,133 +62,110 @@
       </div>
     </header>
     <main class="main">
-
-      <section class="news">
+      <section class="inner-case-studio">
         <div class="container">
-          <div class="news__inner">
-
-            <div class="row-right">
-
-              <h2 class="news__title">LikeSoft Blog</h2>
-              <p class="news__subtitle">Design. Engineering. Lessons learned on our journey.</p>
-
-              <div class="news__blog">
-                <a href="#" class="news__blog-hashtag">
-                  # Development
-                </a>
-                <div class="news__blog-title">
-                  Get Flutter's offline support in Supabase
+          <div class="inner-case-studio__inner">
+            <div class="inner-case-studio__title">
+              <h2 class="case-studio__title">Case <span class="onlyblue-text">studio</span></h2>
+              <p class="case-studio__subtitle">What we develop</p>
+            </div>
+            <div class="inner-case-studio__items">
+              <div class="inner-case-studio__item" style="background-image: url(images/case-studio-inner-page/1.png);">
+                <div class="inner-case-studio__item-content inner-case-studio__item-content--1">
+                  <h3 class="inner-case-studio__item-title">
+                    Сhatgenie.io
+                  </h3>
+                  <ul class="case__stack inner-case-studio__item-stack">
+                    <li class="case__stack-item">UX/UI DESIGN </li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
                 </div>
-                <div class="news__blog-author">
-                  <img class="news__author-photo" src="images/news-page/photo.png" alt="">
-                  <div class="news__author-data">
-                    <h3 class="news__author-name">By Matías Irland</h3>
-                    <p class="news__author-date">Sep 13, 2022</p>
-                  </div>
-                </div>
-                <p class="news__blog-text">
-                  <a href="#" class="onlyblue-text">Supabase</a> is one of the most well-known open-source alternatives to Firebase. Although Supabase implements many <a href="#" class="onlyblue-text">Firebase</a> features, one that I constantly crave is offline support for the real-time database.
-                </p>
-                <p class="news__blog-text">
-                  In this blog post, we’ll cover how you can use a local database as a <a href="#" class="onlyblue-text">Supabase</a> cache through <a href="#" class="onlyblue-text">Stock</a>, a dart package that combines multiple data sources and gets one data . However, you can apply these concepts and ideas to diverse situations, such as adding offline support when using a Rest API.To show how we can achieve that, we’ll create a simple app that lists all of Xmartlabs’ open-source projects, demonstrating how Stock helps us achieve excellent results.
-                </p>
-
-                <div class="news__blog-title">
-                  Architecture Overview
-                </div>
-                <p class="news__blog-text">
-                  Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.
-                </p>
-                <p class="news__blog-text">
-                  We’ll have two data sources, a remote and a local data source, which <a href="#" class="onlyblue-text">Stock</a> will combine in the repository.
-                </p>
-                <p class="news__blog-text">
-                  Because we want to use the real-time database, we’ll use the [Supabase Flutter package]. Although the package provides many features, you can use Supabase as a REST API.
-                </p>
-                <p class="news__blog-text">
-                  Your local database will store this data. In our case, we’ll use <a href="#" class="onlyblue-text">Floor</a> because it’s simple and has many features. If you’d prefer to use another one, there are a bunch of alternatives, such as <a href="#" class="onlyblue-text">Drift</a> or <a href="#" class="onlyblue-text">Realm</a>, you can use.
-                </p>
-
-                <img class="news__blog-preview" src="images/blog page/arch-overview-1.png" alt="">
-
-                <div class="news__blog-title">
-                  Architecture Overview
-                </div>
-                <ul class="news__blog-list">
-                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item disc">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                </ul>
-
-                <img class="news__blog-preview" src="images/blog page/arch-overview-2.png" alt="">
-
-                <ul class="news__blog-list">
-                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                  <li class="news__list-item decimal">Although we want to build a simple app, we’ll use the repository pattern, one of the most used patterns in Flutter nowadays. If you don’t know about it, I suggest checking out <a href="#" class="onlyblue-text">this blog</a>.</li>
-                </ul>
-
-                <img class="news__blog-preview" src="images/news-page/arch_overview.png" alt="">
-
               </div>
-
-              <div class="news__blog-title">
-                More From Xmartlabs Blog
-              </div>
-              <div class="blog__rec">
-                <div class="blog__rec-item">
-                  <img class="blog__rec-preview" src="images/blog page/arch-overview-1.png" alt="">
-                  <div class="blog__rec-content">
-                    <a class="blog__rec-hashtag" href="#"># Development</a>
-                    <p class="blog__rec-date" data-="18"="11"="2022">Oct 5, 2022</p>
-                    <div class="blog__rec-title">
-                      Introducing stock
-                    </div>
-                    <p class="blog__rec-text">
-                      October is a special month for Open Source contributors thanks to Hacktoberfest taking place. In this wonderful month, we...
-                    </p>
-                    <a class="blog__rec-author" href="#">
-                      By Matías Irland
-                    </a>
-                  </div>
+              <div class="inner-case-studio__item" style="background-image: url(images/case-studio-inner-page/2.png);">
+                <div class="inner-case-studio__item-content inner-case-studio__item-content--2">
+                  <h3 class="inner-case-studio__item-title">
+                    Сhatgenie.io
+                  </h3>
+                  <ul class="case__stack inner-case-studio__item-stack">
+                    <li class="case__stack-item">UX/UI DESIGN </li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
                 </div>
-
-                <div class="blog__rec-item">
-                  <img class="blog__rec-preview" src="images/blog page/arch-overview-2.png" alt="">
-                  <div class="blog__rec-content">
-                    <a class="blog__rec-hashtag" href="#"># Development</a>
-                    <p class="blog__rec-date" data-="18"="11"="2022">Sep 29, 2022</p>
-                    <div class="blog__rec-title">
-                      The importance QA in the development process
-                    </div>
-                    <p class="blog__rec-text">
-                      Would you deliver an untested product to a customer? That’s a question every single company should be asking. When developing...
-                    </p>
-                    <a class="blog__rec-author" href="#">
-                      By Sofia Techera
-                    </a>
-                  </div>
+              </div>
+              <div class="inner-case-studio__item" style="background-image: url(images/case-studio-inner-page/1.png);">
+                <div class="inner-case-studio__item-content inner-case-studio__item-content--1">
+                  <h3 class="inner-case-studio__item-title">
+                    Сhatgenie.io
+                  </h3>
+                  <ul class="case__stack inner-case-studio__item-stack">
+                    <li class="case__stack-item">UX/UI DESIGN </li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="inner-case-studio__item" style="background-image: url(images/case-studio-inner-page/2.png);">
+                <div class="inner-case-studio__item-content inner-case-studio__item-content--2">
+                  <h3 class="inner-case-studio__item-title">
+                    Сhatgenie.io
+                  </h3>
+                  <ul class="case__stack inner-case-studio__item-stack">
+                    <li class="case__stack-item">UX/UI DESIGN </li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
                 </div>
               </div>
             </div>
-
-            <aside class="row-left">
-              <div class="sidebar">
-                <div class="sidebar__title">
-                  Let's talk
-                </div>
-                <div class="sidebar__subtitle">
-                  Interested in how we can help you?
-                </div>
-                <a class="btn btn--c" href="#">Get in touch</a>
-              </div>
-            </aside>
           </div>
         </div>
       </section>
-
+      <section class="form-question">
+        <div class="container">
+          <div class="form-question__inner">
+            <div class="modal__content modal__content-contact">
+              <div class="modal__inner">
+                <div class="modal__top">
+                  <h3 class="modal__title">Ask your question to our specialists</h3>
+                  <a class="form-question__icon-mail" href="mailto:likesoft@support.ru">likesoft@support.ru</a>
+                </div>
+                <form action="post" class="modal__form">
+                  <div class="modal__main">
+                    <div class="modal__form-contacts">
+                      <div class="modal__contacts-item">
+                        <span class="modal__form-name">Your name<span class="onlyblue-text">*</span></span>
+                        <input type="text" class="modal__form-item" placeholder="Name">
+                      </div>
+                      <div class="modal__contacts-item">
+                        <span class="modal__form-name">Phone<span class="onlyblue-text">*</span></span>
+                        <input type="text" class="modal__form-item" placeholder="+62 XXX XXX XX XX">
+                      </div>
+                      <div class="modal__contacts-item">
+                        <span class="modal__form-name">Mail<span class="onlyblue-text">*</span></span>
+                        <input type="text" class="modal__form-item" placeholder="Example@mail.ru">
+                      </div>
+                    </div>
+                    <div class="modal__form-message">
+                      <div class="modal__contacts-item">
+                        <span class="modal__form-name">Message<span class="onlyblue-text">*</span></span>
+                        <textarea name="message" class="modal__form-item modal__form-item--textarea" placeholder="Enter your message"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal__bottom">
+                    <p class="modal__agreement">
+                      By clicking on the button, I agree to <a class="onlyblue-text" href="#">the processing of personal data</a>
+                    </p>
+                    <button class="btn" type="submit" href="#">contact us</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
