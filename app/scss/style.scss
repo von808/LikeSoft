@@ -2126,6 +2126,10 @@ body.lock {
     font-family: $inter;
     font-size: 16px;
     line-height: 24px;
+    border: 1px solid rgba($only-black, 0.6);
+    &:focus {
+      border-color: $only-blue;
+    }
   }
 
   &__form-item--textarea {
