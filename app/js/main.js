@@ -26,21 +26,6 @@ $(function () {
 		autoplaySpeed: 3000,
 		asNavFor: '.services__dots',
 	});
-	$('.slider').slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 4
-	});
-	$('.revievs__slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		dots: true,
-		adaptiveHeight: false,
-		centerMode: false,
-		variableWidth: true
-	});
 	$('.services__dots').slick({
 		slidesToShow: 4,
 		slidesToScroll: 4,
@@ -49,6 +34,28 @@ $(function () {
 		focusOnSelect: true,
 		asNavFor: '.services__slider',
 	});
+
+	$('.slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		prevArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-left slider__arrows-left--team" src="../images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="../images/slider-arrow-right.svg" alt="arrow">',
+	});
+
+	$('.revievs__slider-items').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// arrows: true,
+		dots: true,
+		adaptiveHeight: false,
+		centerMode: false,
+		variableWidth: true,
+		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="../images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="../images/slider-arrow-right.svg" alt="arrow">',
+	});
+	
 
 	const modalBTN = document.querySelectorAll('[data-modal]');
 	const body = document.body;
