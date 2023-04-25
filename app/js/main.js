@@ -9,6 +9,8 @@ const handleChange = (isChecked) => {
 
 $(function () {
 
+	
+
 	$(".back-up, .footer__bottom").on("click", "a", function (event) {
 		event.preventDefault();
 		var id = $(this).attr('href'),

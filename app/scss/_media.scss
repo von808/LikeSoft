@@ -166,6 +166,14 @@
       display: none;
     }
   }
+  
+  .blog {
+        
+        &__inner {
+            width: 100%;
+        }
+    }
+    
   .blog__rec-item{
     margin-bottom: 30px;
   }
