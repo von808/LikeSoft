@@ -1,6 +1,9 @@
 :root {
   color-scheme: light dark;
 }
+html{
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
   overflow-y: visible;
@@ -186,5 +189,103 @@ a{
   }
   &-right--revievs{
     right: 0;
+  }
+}
+
+#menu__toggle {
+  opacity: 0;
+  &:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  &:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  &:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  &:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+}
+.hamburger-menu{
+  display: none;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  width: 31px;
+  height: 31px;
+  margin-bottom: 3.8px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  & span {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 27px;
+    height: 2px;
+    background-color: $only-white;
+    transition-duration: .25s;
+  }
+  & span::before,
+  & span::after {
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: $only-white;
+    transition-duration: .25s;
+  }
+  & > span::before {
+    content: '';
+    top: -8px;
+  }
+  & > span::after {
+    content: '';
+    top: 8px;
+  }
+}
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+  width: 100%;
+  height: fit-content;
+  padding-top: 110px;
+  list-style: none;
+  background-color: $only-black;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  margin: 28.8px 20px;
+  color: $only-white;
+  font-family: $garamond;
+  font-size: 30px;
+  line-height: 120%;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.white-header{
+  .menu__btn span{
+    background-color: $only-black;
+  }
+  .menu__btn span::before,
+  .menu__btn span::after{
+    background-color: $only-black;
+  }
+  .menu__box{
+    background-color: $only-white;
   }
 }
