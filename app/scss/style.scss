@@ -408,11 +408,12 @@
   }
 }
 
-.cases{
-  &__inner{
+.cases {
+  &__inner {
     position: relative;
   }
-  &__bg-1{
+
+  &__bg-1 {
     position: absolute;
     left: 75%;
     height: 100%;
@@ -422,7 +423,8 @@
     background-position: right;
     background-size: cover;
   }
-  &__bg-2{
+
+  &__bg-2 {
     position: absolute;
     left: 75%;
     height: 100%;
@@ -969,61 +971,73 @@
 }
 
 // Case-studio inner-page ============================================================
-.inner-case-studio{
+.inner-case-studio {
   padding: 170px 0 110px;
-  &__title{
+
+  &__title {
     font-family: $garamond;
     font-size: 52px;
     line-height: 120%;
     color: var(--var-inner-case-studio-title);
     text-align: center;
-    h2{
+
+    h2 {
       margin-bottom: 10px;
     }
-    p{
+
+    p {
       font-family: $inter;
       font-size: 16px;
       line-height: 150%;
     }
   }
-  &__items{
+
+  &__items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 60px;
   }
-  &__item{
+
+  &__item {
     max-width: 589px;
     width: 100%;
     height: 447px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
   }
-  &__item-content{
+
+  &__item-content {
     padding: 40px;
-    .case__stack-item{
+
+    .case__stack-item {
       background-color: $transparent;
     }
-    &--1{
+
+    &--1 {
       color: $only-black;
-      .case__stack-item{
+
+      .case__stack-item {
         opacity: 0.5;
         color: $only-black;
         border: 1px solid $only-black;
       }
     }
-    &--2{
+
+    &--2 {
       color: $only-white;
-      .case__stack-item{
+
+      .case__stack-item {
         opacity: 0.5;
         color: $only-white;
         border: 1px solid $only-lightgrey;
       }
     }
   }
-  &__item-title{
+
+  &__item-title {
     font-family: $garamond;
     font-size: 28px;
     line-height: 110%;
@@ -1032,12 +1046,13 @@
 }
 
 // Case-studio ============================================================
-.case-studio{
-  &__black{
+.case-studio {
+  &__black {
     background-color: $only-black;
     padding: 200px 0;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -1050,17 +1065,20 @@
       opacity: .1;
     }
   }
-  &__items{
+
+  &__items {
     display: flex;
     flex-direction: column;
     gap: 240px;
   }
-  &__items-case{
+
+  &__items-case {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  &__item-card{
+
+  &__item-card {
     background-image: url(../images/case-studio/card-1.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -1069,26 +1087,32 @@
     width: 466px;
     height: 312px;
   }
-  &__item-info{
+
+  &__item-info {
     max-width: 468px;
   }
-  &__item-title{
+
+  &__item-title {
     color: $only-white;
     margin-bottom: 20px;
   }
-  &__item-text{
+
+  &__item-text {
     font-family: $inter;
     color: $only-white;
     font-size: 16px;
     line-height: 150%;
-    p:not(:last-child){
+
+    p:not(:last-child) {
       margin-bottom: 24px;
     }
   }
-  &__white{
+
+  &__white {
     padding: 215px 0 140px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -1100,20 +1124,24 @@
       background-color: var(--var-case-studio-black-line);
       opacity: .1;
     }
+
     .case-studio__item-title,
-    .case-studio__item-text{
+    .case-studio__item-text {
       color: var(--var-case-studio-black-text);
     }
   }
-  &__text{
+
+  &__text {
     padding: 80px 0;
   }
-  &__text-inner{
+
+  &__text-inner {
     max-width: 712px;
     margin: 0 auto;
     text-align: center;
     color: var(--var-case-studio-black-text);
-    p:not(:last-child){
+
+    p:not(:last-child) {
       margin-bottom: 24px;
     }
   }
@@ -1223,7 +1251,7 @@
     }
 
     &-date {
-    font-family: $garamond;
+      font-family: $garamond;
       font-size: 14px;
       line-height: 14px;
       margin-bottom: 9px;
@@ -1297,7 +1325,7 @@
 
     &-date {
       font-family: $garamond;
-      font-size: 14px; 
+      font-size: 14px;
       line-height: 14px;
       margin-bottom: 12px;
     }
@@ -1330,38 +1358,43 @@
   &__list {
     padding: 0 0 72px 10px;
 
-    &-item{
+    &-item {
       padding: 0 0 40px 0;
     }
-    &-hashtag{
+
+    &-hashtag {
       color: var(--var-blog-text);
       font-family: $garamond;
       font-size: 20px;
       line-height: 22px;
       margin-bottom: 10px;
     }
-    &-date{
+
+    &-date {
       font-family: $garamond;
       font-size: 14px;
       line-height: 14px;
       margin-bottom: 15px;
     }
-    &-title{
+
+    &-title {
       font-family: $garamond;
       font-size: 28px;
       font-weight: 700;
       line-height: 31px;
       margin-bottom: 13px;
     }
-    &-text{
+
+    &-text {
       font-family: $work;
       font-size: 18px;
       font-weight: 300;
       line-height: 22px;
       letter-spacing: 0.3400000035762787px;
       margin-bottom: 11px;
-    } 
-    &-author{
+    }
+
+    &-author {
       color: $only-blue;
       font-family: $inter;
       font-size: 12px;
@@ -1382,8 +1415,8 @@
     text-align: left;
     font-family: $garamond;
     color: $only-black;
-  
-    .blog__rec{
+
+    .blog__rec {
       padding: 0 0 110px 0;
     }
   }
@@ -1400,7 +1433,7 @@
     margin-bottom: 42px;
   }
 
-  &__blog{
+  &__blog {
     display: flex;
     justify-content: space-between;
     gap: 13.7%;
@@ -1415,14 +1448,14 @@
       color: $only-blue;
       margin-bottom: 6px;
     }
-  
+
     &-title {
       font-size: 28px;
       font-weight: 700;
       line-height: 31px;
       margin-bottom: 20px;
     }
-  
+
     &-author {
       display: flex;
       gap: 20px;
@@ -1431,7 +1464,7 @@
     }
   }
 
-  &__content{
+  &__content {
     &-title {
       font-size: 28px;
       font-weight: 700;
@@ -1447,14 +1480,15 @@
       line-height: 24px;
       margin-bottom: 60px;
 
-      img{
+      img {
         padding-top: 20px;
       }
     }
-  
+
     &-preview {
       margin-bottom: 60px;
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0;
       }
     }
@@ -1513,8 +1547,8 @@
 }
 
 .row-right {
-    width: 136px;
-    // width: 16.3%;
+  width: 136px;
+  // width: 16.3%;
 }
 
 .row-left {
@@ -1748,38 +1782,39 @@
       margin-bottom: 27px;
     }
   }
+
   .slider {
     margin-bottom: 60px;
     padding: 0 22px;
-  
+
     &__item {
       text-align: left;
       font-family: $gilroy;
-  
+
       &-photo {
         width: 100%;
         margin-bottom: 20px;
         box-shadow: 0px 3px 5px rgb(40 51 91 / 20%);
       }
-  
+
       &-name {
         font-size: 21px;
         line-height: 21px;
         margin-bottom: 8px;
       }
-  
+
       &-post {
         font-size: 16px;
         line-height: 16px;
       }
     }
   }
-  
+
   .slick-track {
     display: flex;
     gap: 24px;
   }
-  
+
   .slick-arrow {
     border-radius: 50%;
     width: 48px;
@@ -1787,33 +1822,33 @@
     display: block;
     background: $only-white;
     margin: -57px 0 0 0;
-  
+
     position: absolute;
     top: 50%;
     z-index: 10;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.02);
   }
-  
+
   .slick-prev {
     // background: url(../images/about-us-page/pagination-arrow-left.svg) 0 0 / 100% no-repeat;
     left: 0;
   }
-  
+
   .slick-next {
     // background-image: url(../images/about-us-page/pagination-arrow-right.svg);
     right: 0;
   }
-  
+
   .slick-track {
     display: flex;
     align-items: flex-start;
   }
-  
+
   .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     button {
       height: 2px;
       width: 24px;
@@ -1823,18 +1858,18 @@
       border-radius: 1px;
       background-color: $only-grey;
     }
-  
+
     li {
       margin: 0 4px;
     }
-  
+
     li.slick-active {
       button {
         background-color: $only-blue;
       }
     }
   }
-} 
+}
 
 .trust--about-us {
   background-color: $only-blue;
@@ -1941,6 +1976,7 @@
   }
 
 }
+
 /* /Media */
 /* Modal ===================*/
 body.lock {
@@ -2081,6 +2117,7 @@ body.lock {
 .modal.show {
   display: flex;
 }
+
 body.lock {
   overflow: hidden;
 }
