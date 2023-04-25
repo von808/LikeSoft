@@ -408,6 +408,33 @@
   }
 }
 
+.cases{
+  &__inner{
+    position: relative;
+  }
+  &__bg-1{
+    position: absolute;
+    left: 75%;
+    height: 100%;
+    z-index: -2;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+  &__bg-2{
+    position: absolute;
+    left: 75%;
+    height: 100%;
+    z-index: -1;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    opacity: 0;
+  }
+}
+
 .case {
   background-repeat: no-repeat;
   background-position: right;
@@ -855,10 +882,12 @@
   }
 
   &__inner {
-    color: var(--var-industries-text)
+    color: var(--var-industries-text);
+    margin: 0 -100vw;
+    padding: 0 100vw;
   }
 
-  &__1 {
+  &__item {
     display: flex;
     justify-content: space-between;
   }
