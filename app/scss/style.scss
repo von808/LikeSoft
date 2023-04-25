@@ -1348,13 +1348,15 @@
   padding: 110px 0 0 0;
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    width: 69.4%;
+    width: 832px;
     margin: 0 auto;
     text-align: left;
     font-family: $garamond;
     color: $only-black;
+  
+    .blog__rec{
+      padding: 0 0 110px 0;
+    }
   }
 
   &__title {
@@ -1370,7 +1372,12 @@
   }
 
   &__blog{
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 13.7%;
+    width: 100%;
+
+    margin-bottom: 110px;
     font-family: $inter;
 
     &-hashtag {
@@ -1391,37 +1398,52 @@
       display: flex;
       gap: 20px;
       align-items: center;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
-  
+  }
+
+  &__content{
+    &-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 31px;
+      margin-bottom: 30px;
+    }
+
     &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 21px;
+      margin-bottom: 60px;
+
+      img{
+        padding-top: 20px;
+      }
     }
   
     &-preview {
-      padding: 20px 0 60px 0;
+      margin-bottom: 60px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
-  
-    &-list {
-      margin-bottom: 40px;
-      padding-left: 25px;
-    }
-  
-    .news__list-item {
+
+    &-item {
       font-family: $inter;
       font-size: 16px;
       line-height: 24px;
+      margin-left: 25px;
     }
-  
-    .disc {
-      list-style: disc;
-    }
-  
-    .decimal {
-      list-style: decimal;
-    }
+  }
+
+  .disc {
+    list-style: disc;
+  }
+
+  .decimal {
+    list-style: decimal;
   }
 
   .news__author-photo {
@@ -1462,8 +1484,13 @@
 }
 
 .row-right {
-  // max-width: 582px;
-  width: 69.95%;
+    width: 136px;
+    // width: 16.3%;
+}
+
+.row-left {
+  width: 582px;
+  // width: 69.95%;
   position: relative;
 
   &::after {
@@ -1473,13 +1500,8 @@
     background: rgba($only-black, 0.1);
     position: absolute;
     top: 0;
-    right: -10%;
+    right: -56px;
   }
-}
-
-.row-left {
-  // max-width: 135px;
-  width: 16.2%;
 }
 
 .form-question {
@@ -1783,10 +1805,11 @@
       }
     }
   }
-}
+} 
 
 .trust--about-us {
   background-color: $only-blue;
+  margin-bottom: 110px;
 }
 
 .trust__item--about-us svg {
@@ -1794,10 +1817,6 @@
 }
 
 .revievs {
-  &__inner {
-    padding: 110px 0;
-  }
-
   &__content {
     text-align: center;
   }

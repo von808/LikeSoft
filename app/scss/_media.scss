@@ -1,0 +1,40 @@
+@media (max-width: 990px) {
+  .news__blog .row-right,
+  .row-left::after {
+    display: none;
+  }
+  .news__inner,
+  .row-left,
+  .news__content-preview  {
+    width: 100%;
+  }
+  .news__blog{
+    margin-bottom: 80px;
+  }
+  .news__title {
+    font-size: 26px;
+    text-align: center;
+
+  }
+  .news__subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .news__content-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .news__blog-title {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+  .news__blog-author {
+    margin-bottom: 25px;
+  }
+  .news__content-text {
+    margin-bottom: 40px;
+  }
+  .news__content-text img {
+    padding-top: 0;
+  }
+}
