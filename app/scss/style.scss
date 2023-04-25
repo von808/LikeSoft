@@ -1629,6 +1629,7 @@
 
 .about {
   padding: 110px 0 187px 0;
+  color: var(--var-about-us-fc-1);
 
   &__inner {
     display: flex;
@@ -1680,6 +1681,7 @@
 
 .values {
   margin-bottom: 135px;
+  color: var(--var-about-us-fc-1);
 
   &__content {
     text-align: center;
@@ -1701,6 +1703,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 60px;
+    color: $only-grey;
   }
 
   &__features {
@@ -1710,7 +1713,7 @@
   }
 
   &__features-item {
-    background-color: $only-lightgrey;
+    background-color: var(--var-about-us-bc-1);
     width: 282px;
     display: flex;
     flex-direction: column;
@@ -1757,11 +1760,13 @@
     font-family: $inter;
     font-size: 16px;
     line-height: 24px;
+    color: $only-grey;
   }
 }
 
 .team {
   margin-bottom: 110px;
+  color: var(--var-about-us-fc-1);
 
   &__inner {
     text-align: center;
@@ -1786,10 +1791,9 @@
       margin-bottom: 27px;
     }
   }
-
   .slider {
     margin-bottom: 60px;
-    padding: 0 22px;
+    padding: 0 25px;
 
     &__item {
       text-align: left;
@@ -1819,19 +1823,20 @@
     gap: 24px;
   }
 
-  .slick-arrow {
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: block;
-    background: $only-white;
-    margin: -57px 0 0 0;
 
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.02);
-  }
+  // .slick-arrow {
+  //   border-radius: 50%;
+  //   width: 48px;
+  //   height: 48px;
+  //   display: block;
+  //   background: $only-white;
+  //   margin: -57px 0 0 0;
+
+  //   position: absolute;
+  //   top: 50%;
+  //   z-index: 10;
+  //   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.02);
+  // }
 
   .slick-prev {
     // background: url(../images/about-us-page/pagination-arrow-left.svg) 0 0 / 100% no-repeat;
@@ -1885,6 +1890,7 @@
 }
 
 .revievs {
+  margin-bottom: 110px;
   &__content {
     text-align: center;
   }
@@ -1894,6 +1900,7 @@
     font-size: 52px;
     line-height: 62px;
     margin-bottom: 20px;
+    color: var(--var-about-us-fc-1);
   }
 
   &__subtitle {
@@ -1904,14 +1911,38 @@
     color: $only-grey;
   }
 
-  &__slider {
-    padding: 0 22px;
+  &__slider-items{
+    max-width: 1200px;
+    padding: 0 16px;
+    .slick-dots{
+      padding-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+    .slick-dots li{
+      list-style: none;
+      margin: 0 4px;
+    }
+    .slick-dots li.slick-active button {
+      background-color: $only-blue;
+    }
+    .slick-dots button {
+      height: 2px;
+      width: 24px;
+      padding: 0;
+      font-size: 0;
+      border: none;
+      border-radius: 1px;
+      background-color: rgba($only-grey, .2);
+  }
   }
 
   &__item {
-    width: 369px;
+    width: 368px;
     padding: 30px 24px 40px;
     background-color: $only-lightgrey;
+    text-align: left;
   }
 
   &__person {
@@ -1958,11 +1989,15 @@
     font-weight: 500;
     line-height: 16px;
   }
+  .slider__item {
+    width: 368px;
+    margin: 0 12px;
+  }
 }
-
 /* /About us */
 /* Media */
 .media {
+  color: var(--var-about-us-fc-1);
   &__title {
     font-family: $garamond;
     font-size: 52px;
@@ -1977,6 +2012,7 @@
     line-height: 16px;
     margin-bottom: 60px;
     text-align: center;
+    color: $only-grey;
   }
 
 }
