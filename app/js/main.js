@@ -22,6 +22,7 @@ $(function () {
 		verticalSwiping: true,
 		arrows: false,
 		pauseOnFocus: false,
+		pauseOnHover: false,
 		autoplay: true,
 		autoplaySpeed: 3000,
 		asNavFor: '.services__dots',
@@ -31,6 +32,7 @@ $(function () {
 		slidesToScroll: 4,
 		vertical: true,
 		pauseOnFocus: false,
+		pauseOnHover: false,
 		focusOnSelect: true,
 		asNavFor: '.services__slider',
 	});
@@ -116,5 +118,21 @@ $(function () {
       filter: '.education'
     }
   });
+
+	// $('.blog__rec').slick({
+  //   dots: false,
+  //   arrows: false,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 1650,
+    //     settings: {
+    //       slidesToShow: 8,
+    //       slidesToScroll: 8,
+    //     }
+    //   },
+    // ]
+  // });
 
 })
