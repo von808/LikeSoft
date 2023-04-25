@@ -100,6 +100,11 @@ $(function () {
 	}
 
 	var mixer = mixitup('.tabs__inner', {
+		animation: {
+			duration: 700,
+			effects: 'stagger(34ms) fade scale(0.41)',
+			easing: 'ease'
+			},
     load: {
       filter: '.education'
     }
