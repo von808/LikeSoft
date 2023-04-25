@@ -1441,6 +1441,17 @@
 
     margin-bottom: 110px;
     font-family: $inter;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: rgba($only-black, 0.1);
+      position: absolute;
+      top: 0;
+      left: 76.8%;
+    }
 
     &-hashtag {
       font-size: 14px;
@@ -1555,16 +1566,6 @@
   width: 582px;
   // width: 69.95%;
   position: relative;
-
-  &::after {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: rgba($only-black, 0.1);
-    position: absolute;
-    top: 0;
-    right: -56px;
-  }
 }
 
 .form-question {
