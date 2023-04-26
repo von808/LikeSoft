@@ -413,31 +413,49 @@
 
   &__inner {
     position: relative;
+
+    #case-bg-1,
+    #case-bg-2 {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      margin-right: -200px;
+      padding-right: 200px;
+      min-height: 800px;
+
+      position: absolute;
+      left: 75%;
+      height: 100%;
+      z-index: -2;
+      width: 50vw;
+      object-fit: cover;
+    }
+    
   }
 
-  &__bg-1 {
-    position: absolute;
-    left: 75%;
-    height: 100%;
-    z-index: -2;
-    width: 50vw;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    opacity: 1;
-  }
+  // &__bg-1 {
+    // position: absolute;
+    // left: 75%;
+    // height: 100%;
+    // z-index: -2;
+    // width: 50vw;
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-size: cover;
+  //   opacity: 1;
+  // }
 
-  &__bg-2 {
-    position: absolute;
-    left: 75%;
-    height: 100%;
-    z-index: -1;
-    width: 50vw;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    opacity: 0;
-  }
+  // &__bg-2 {
+    // position: absolute;
+    // left: 75%;
+    // height: 100%;
+    // z-index: -1;
+    // width: 50vw;
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-size: cover;
+    // opacity: 0;
+  // }
 }
 
 .case {
@@ -494,6 +512,42 @@
     object-fit: contain;
     width: 808px;
   }
+}
+
+.appear[data-src], .appear[data-bkg], .appear [data-src], .appear [data-bkg] {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+     -moz-transition: opacity 1s ease-in;
+          transition: opacity 1s ease-in;
+}
+.appeared[data-src], .appeared[data-bkg], .appeared [data-src], .appeared [data-bkg] {
+  opacity: 1;
+}
+
+.case.appeared1 {
+  position: absolute;
+  left: 75%;
+  height: 100%;
+  z-index: -1;
+  width: 50vw;
+  background-image: url(../images/cases-light-bg-1.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  opacity: 1;
+}
+
+.case.appeared2 {
+  position: absolute;
+  left: 75%;
+  height: 100%;
+  z-index: -1;
+  width: 50vw;
+  background-image: url(../images/cases-light-bg-2.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  opacity: 1;
 }
 
 .why {

@@ -557,17 +557,14 @@
           </div>
         </section>
 
-        <section class="cases">
+        <section class="cases" id="cases">
           <div class="container">
             <div class="cases__inner">
-              <div
-                class="cases__bg-1"
-                style="background-image: url(images/cases-light-bg-1.svg)"
-              ></div>
-              <div
-                class="cases__bg-2"
-                style="background-image: url(images/cases-light-bg-2.svg)"
-              ></div>
+
+              <img class="appear" data-src="images/cases-light-bg-1.svg" id="case-bg-1">
+              <img class="appear" data-src="images/cases-light-bg-2.svg" id="case-bg-2">
+
+
               <div class="case case-light" id="case1">
                 <div class="case__info">
                   <h2 class="case__title">Сhatgenie.io</h2>
@@ -584,11 +581,8 @@
                   alt="card"
                 />
               </div>
-              <div
-                class="case case-light"
-                id="case2"
-                sasdtyle="background-image: url(images/cases-light-bg-2.svg);"
-              >
+
+              <div class="case case-light" id="case2">
                 <div class="case__info">
                   <h2 class="case__title">Getsales.ai</h2>
                   <ul class="case__stack">
@@ -604,10 +598,12 @@
                   alt="card"
                 />
               </div>
-              <div
+
+              <!-- <div
                 class="case case-dark"
                 sasdtyle="background-image: url(images/cases-dark-bg.svg);"
               >
+              
                 <div class="case__info">
                   <h2 class="case__title">
                     <span class="onlyblue-text db">Expert-powered</span>
@@ -651,7 +647,7 @@
                   />
                   <img src="images/cases-dark-card.png" alt="card" />
                 </picture>
-              </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -975,5 +971,6 @@
       </div>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="js/appear.min.js"></script>
   </body>
 </html>
