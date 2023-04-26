@@ -328,7 +328,7 @@
     top: 0;
     left: -2px;
     width: 2px;
-    height: 99px;
+    height: 100%;
     background-color: var(--var-services-duration-slide-line);
     animation-duration: 3.4s;
     animation-timing-function: linear;
@@ -377,7 +377,8 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: center;
     text-align: center;
@@ -385,7 +386,7 @@
   }
 
   &__item {
-    width: 100%;
+    width: 255px;
 
     img {
       margin-bottom: 30px;
@@ -444,16 +445,8 @@
   margin-right: -200px;
   padding-right: 200px;
   min-height: 800px;
-
+  display: flex;
   justify-content: space-between;
-
-  &-light {
-    display: var(--var-case-light);
-  }
-
-  &-dark {
-    display: var(--var-case-dark);
-  }
 
   &__info {
     margin: 248px var(--var-case-info-mr) 0 0;
@@ -596,6 +589,7 @@
     background-size: contain;
     max-width: 589px;
     width: 100%;
+    min-height: 597px;
   }
 
   &__info {
@@ -1788,6 +1782,7 @@
       margin-bottom: 27px;
     }
   }
+
   .slider {
     margin-bottom: 60px;
     padding: 0 25px;
@@ -1888,6 +1883,7 @@
 
 .revievs {
   margin-bottom: 110px;
+
   &__content {
     text-align: center;
   }
@@ -1908,22 +1904,26 @@
     color: $only-grey;
   }
 
-  &__slider-items{
+  &__slider-items {
     max-width: 1200px;
     padding: 0 16px;
-    .slick-dots{
+
+    .slick-dots {
       padding-top: 40px;
       display: flex;
       justify-content: center;
-      align-items:center;
+      align-items: center;
     }
-    .slick-dots li{
+
+    .slick-dots li {
       list-style: none;
       margin: 0 4px;
     }
+
     .slick-dots li.slick-active button {
       background-color: $only-blue;
     }
+
     .slick-dots button {
       height: 2px;
       width: 24px;
@@ -1932,7 +1932,7 @@
       border: none;
       border-radius: 1px;
       background-color: rgba($only-grey, .2);
-  }
+    }
   }
 
   &__item {
@@ -1986,15 +1986,18 @@
     font-weight: 500;
     line-height: 16px;
   }
+
   .slider__item {
     width: 368px;
     margin: 0 12px;
   }
 }
+
 /* /About us */
 /* Media */
 .media {
   color: var(--var-about-us-fc-1);
+
   &__title {
     font-family: $garamond;
     font-size: 52px;
