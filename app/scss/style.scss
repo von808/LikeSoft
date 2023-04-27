@@ -410,6 +410,8 @@
 }
 
 .cases {
+  overflow: hidden;
+
   &__inner {
     position: relative;
   }
@@ -423,6 +425,7 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
+    opacity: 1;
   }
 
   &__bg-2 {
