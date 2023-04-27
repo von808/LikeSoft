@@ -250,6 +250,41 @@
 }
 
 @media (max-width: 768px) {
+  .modal__close {
+    top: 0;
+    right: 1rem;
+  }
+
+  .modal__content {
+    max-height: unset;
+    margin-top: 80px;
+  }
+
+  .modal__main {
+    flex-direction: column;
+  }
+
+  .modal__form-item {
+    padding: 10px;
+  }
+
+  .modal__form-item--textarea {
+    height: 200px;
+  }
+
+  .modal__form-contacts {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .modal__form-message {
+    width: 100%;
+  }
+
+  .modal__bottom {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
 
   .news {
     padding: 91px 0 0 0;
@@ -403,8 +438,12 @@
   }
 }
 
-@media (max-width: 540px) {
-  .news__content-text img {
+@media (max-width: 540px){
+  .modal__content {
+    margin-top: 80px;
+    padding: 30px 20px;
+  }
+  .news__content-text img{
     margin: 0 -15px;
   }
 
