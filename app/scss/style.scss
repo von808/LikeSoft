@@ -1170,10 +1170,11 @@
   }
 
   &__item {
-    background: $only-lightgrey;
+    background-color: var(--var-services-page-card-bg);
     transition: all 0.2s linear;
     position: relative;
     height: 364px;
+    color: var(--var-services-page-card-title);
 
     img {
       position: absolute;
@@ -1200,6 +1201,7 @@
 .blog {
   background-color: var(--var-services-bg);
   padding: 170px 0 59px;
+  color: var(--var-blog-fc);
 
   &__inner {
     width: 69.4%;
@@ -1402,13 +1404,14 @@
 /* News page */
 .news {
   padding: 110px 0 0 0;
+  color: var(--var-news-fc);
 
   &__inner {
     width: 832px;
     margin: 0 auto;
     text-align: left;
     font-family: $garamond;
-    color: $only-black;
+    // color: $only-black;
 
     .blog__rec {
       padding: 0 0 110px 0;
