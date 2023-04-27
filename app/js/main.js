@@ -137,6 +137,15 @@ $(function() {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		asNavFor: '.services__dots',
+		responsive: [
+			{
+			breakpoint: 840,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+			},
+		]
 	});
 	$('.services__dots').slick({
 		slidesToShow: 4,
@@ -146,6 +155,14 @@ $(function() {
 		pauseOnHover: false,
 		focusOnSelect: true,
 		asNavFor: '.services__slider',
+		responsive: [
+			{
+			breakpoint: 840,
+			settings: {
+				vertical: false,
+			}
+			},
+		]
 	});
 
 	$('.slider').slick({
