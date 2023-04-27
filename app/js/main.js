@@ -167,8 +167,8 @@ $(function() {
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		prevArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-left slider__arrows-left--team" src="../images/slider-arrow-left.svg" alt="arrow">',
-    nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="../images/slider-arrow-right.svg" alt="arrow">',
+		prevArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-left slider__arrows-left--team" src="images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="images/slider-arrow-right.svg" alt="arrow">',
 	});
 
 	$('.revievs__slider-items').slick({
@@ -180,8 +180,8 @@ $(function() {
 		adaptiveHeight: false,
 		centerMode: false,
 		variableWidth: true,
-		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="../images/slider-arrow-left.svg" alt="arrow">',
-    nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="../images/slider-arrow-right.svg" alt="arrow">',
+		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="images/slider-arrow-right.svg" alt="arrow">',
 	});
 	
 	var mixer = mixitup('.tabs__inner', {
