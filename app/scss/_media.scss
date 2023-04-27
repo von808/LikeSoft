@@ -1,3 +1,19 @@
+@media (max-width: 1400px) {
+  .industries__intro-bg{
+    right: -100px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .tabs__item{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .tabs__img{
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 1100px) {
   .technologies__inner {
     flex-wrap: wrap;
@@ -153,6 +169,32 @@
 
   .why__list {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 940px) {
+  .blog__rec-items {
+    max-width: 323px;
+    margin: 0 auto;
+  }
+  .blog__rec-content{
+    max-width: 303px;
+    padding: 0 5px;
+  }
+  .blog__rec-item{
+    margin: 0;
+  }
+  .blog__rec-item-content{
+    max-width: none;
+    width: 100%;
+  }
+  .blog__rec-preview{
+    width: 323px;
+    height: 160px;
+    padding: 0 5px;
+  }
+  .blog__rec-title{
+    font-size: 24px;
   }
 }
 
@@ -440,6 +482,16 @@
   .case__stack li {
     font-size: 12px;
   }
+
+  .tabs__text-highlighted {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+
+  .tabs__text-highlighted p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -532,6 +584,29 @@
   }
 
   .title-garamond {
+    font-size: 39px;
+  }
+
+  .tabs__btn{
+    display: none;
+  }
+
+  .form-group{
+    display: block;
+    width: 100%;
+  }
+
+  .tabs__img img{
+    width: 370px;
+    height: 444px;
+  }
+
+  .tabs__img::before{
+    width: 349px;
+    height: 395px;
+  }
+
+  .tabs__text-highlighted p{
     font-size: 39px;
   }
 }
@@ -658,5 +733,63 @@
 
   .case-studio__item-title {
     max-width: 200px;
+  }
+
+  .blog__rec-title{
+    font-size: 22px;
+  }
+
+  .industries__intro-bg{
+    width: 288px;
+    height: 270px;
+    top: auto;
+    bottom: 0;
+    right: -15px;
+  }
+
+  .industries__intro-bg .opacity-gradient-left{
+    height: 150px;
+    width: 270px;
+    left: -60px;
+    bottom: 60px;
+  }
+
+  .industries__intro-bg .opacity-gradient-top{
+    height: 150px;
+    width: 328px;
+    top: 0;
+    left: 0;
+  }
+
+  .tabs__buttons{
+    margin-bottom: 35px;
+  }
+
+  .tabs__img img{
+    width: 276px;
+    height: 331px;
+  }
+
+  .tabs__img::before{
+    width: 260px;
+    height: 295px;
+  }
+
+  .tabs{
+    padding: 40px 0 80px;
+    .btn {
+      text-align: center;
+    }
+  }
+  .tabs__text{
+    font-size: 12px;
+  }
+
+  .tabs__text-highlighted{
+    margin-bottom: 30px;
+  }
+
+  .tabs__text-highlighted p{
+    font-size: 22px;
   }
 }
