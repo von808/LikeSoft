@@ -1,1 +1,1 @@
-# Go-Surf: https://von808.github.io/LikeSoft
+# LikeSoft: https://von808.github.io/LikeSoft

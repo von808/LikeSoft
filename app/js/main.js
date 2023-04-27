@@ -1,12 +1,10 @@
-$(function () {
-	const handleChange = (isChecked) => {
-		if (isChecked) {
-			document.body.setAttribute('dark', '');
-		} else {
-			document.body.removeAttribute('dark');
-		}
+const handleChange = (isChecked) => {
+	if (isChecked) {
+		document.body.setAttribute('dark', '');
+	} else {
+		document.body.removeAttribute('dark');
 	}
-});
+}
 
 // function appear() {
 // 	(function() {
@@ -137,6 +135,15 @@ $(function() {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		asNavFor: '.services__dots',
+		responsive: [
+			{
+			breakpoint: 840,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
+			}
+			},
+		]
 	});
 	$('.services__dots').slick({
 		slidesToShow: 4,
@@ -146,14 +153,22 @@ $(function() {
 		pauseOnHover: false,
 		focusOnSelect: true,
 		asNavFor: '.services__slider',
+		responsive: [
+			{
+			breakpoint: 840,
+			settings: {
+				vertical: false,
+			}
+			},
+		]
 	});
 
 	$('.slider').slick({
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		prevArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-left slider__arrows-left--team" src="../images/slider-arrow-left.svg" alt="arrow">',
-    nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="../images/slider-arrow-right.svg" alt="arrow">',
+		prevArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-left slider__arrows-left--team" src="images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="images/slider-arrow-right.svg" alt="arrow">',
 	});
 
 	$('.revievs__slider-items').slick({
@@ -165,8 +180,28 @@ $(function() {
 		adaptiveHeight: false,
 		centerMode: false,
 		variableWidth: true,
-		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="../images/slider-arrow-left.svg" alt="arrow">',
-    nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="../images/slider-arrow-right.svg" alt="arrow">',
+		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="images/slider-arrow-left.svg" alt="arrow">',
+    nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="images/slider-arrow-right.svg" alt="arrow">',
+	});
+
+	$('.blog__rec-items').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		dots: true,
+		arrows: false,
+		adaptiveHeight: false,
+		centerMode: false,
+		variableWidth: true,
+		responsive: [
+			{
+			breakpoint: 940,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+			},
+		]
 	});
 	
 	var mixer = mixitup('.tabs__inner', {
@@ -232,18 +267,51 @@ $(function () {
 	}
 });
 
-// $('.blog__rec').slick({
-  //   dots: false,
-  //   arrows: false,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-    // responsive: [
-    //   {
-    //     breakpoint: 1650,
-    //     settings: {
-    //       slidesToShow: 8,
-    //       slidesToScroll: 8,
-    //     }
-    //   },
-    // ]
-  // });
+// Полифилл для метода forEach для NodeList
+if (window.NodeList && !NodeList.prototype.forEach) {
+	NodeList.prototype.forEach = function (callback, thisArg) {
+		thisArg = thisArg || window;
+		for (var i = 0; i < this.length; i++) {
+			callback.call(thisArg, this[i], i, this);
+		}
+	};
+}
+
+document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+	const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
+	const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
+	const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+	const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
+
+	// Клик по кнопке. Открыть/Закрыть select
+	dropDownBtn.addEventListener('click', function (e) {
+		dropDownList.classList.toggle('dropdown__list--visible');
+        this.classList.add('dropdown__button--active');
+	});
+
+	// Выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун
+	dropDownListItems.forEach(function (listItem) {
+		listItem.addEventListener('click', function (e) {
+			e.stopPropagation();
+			dropDownBtn.innerText = this.innerText;
+			dropDownBtn.focus();
+			dropDownInput.value = this.dataset.value;
+			dropDownList.classList.remove('dropdown__list--visible');
+		});
+	});
+
+	// Клик снаружи дропдауна. Закрыть дропдаун
+	document.addEventListener('click', function (e) {
+		if (e.target !== dropDownBtn) {
+			dropDownBtn.classList.remove('dropdown__button--active');
+			dropDownList.classList.remove('dropdown__list--visible');
+		}
+	});
+
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Tab' || e.key === 'Escape') {
+			dropDownBtn.classList.remove('dropdown__button--active');
+			dropDownList.classList.remove('dropdown__list--visible');
+		}
+	});
+});
