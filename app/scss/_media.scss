@@ -65,29 +65,29 @@
     font-size: 30px;
   }
 
-  .case-studio__black{
+  .case-studio__black {
     padding: 120px 0 80px;
   }
 
-  .case-studio__white{
+  .case-studio__white {
     padding: 80px 0;
   }
 
-  .case-studio__black::before{
+  .case-studio__black::before {
     position: static;
   }
 
-  .case-studio__white::before{
+  .case-studio__white::before {
     position: static;
   }
 
-  .case-studio__items{
+  .case-studio__items {
     gap: 80px;
   }
 
-  .case-studio__items-case{
+  .case-studio__items-case {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     gap: 30px;
   }
 
@@ -366,19 +366,20 @@
     }
   }
 
-  .form-question .modal__top{
+  .form-question .modal__top {
     flex-wrap: wrap;
   }
-  .form-question__icon-mail{
+
+  .form-question__icon-mail {
     margin: -8px 0 20px 25.5px;
   }
 
   .blog {
-        
+
     &__inner {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
 
   .blog__rec-item {
     margin-bottom: 30px;
@@ -415,11 +416,11 @@
     font-size: 33px;
   }
 
-  .case-studio__title{
+  .case-studio__title {
     font-size: 39px;
   }
 
-  .inner-case-studio__item{
+  .inner-case-studio__item {
     max-width: 300px;
     height: 228px;
   }
@@ -427,23 +428,27 @@
   .inner-case-studio__item-content {
     padding: 20px 10px;
   }
+
   .inner-case-studio__item-title {
     font-size: 22px;
   }
-  .case__stack{
+
+  .case__stack {
     gap: 10px;
   }
-  .case__stack li{
+
+  .case__stack li {
     font-size: 12px;
   }
 }
 
-@media (max-width: 540px){
+@media (max-width: 540px) {
   .modal__content {
     margin-top: 80px;
     padding: 30px 20px;
   }
-  .news__content-text img{
+
+  .news__content-text img {
     margin: 0 -15px;
   }
 
@@ -521,12 +526,12 @@
     padding: 80px 0;
   }
 
-  .case-studio__item-card{
+  .case-studio__item-card {
     width: 300px;
     height: 200px;
   }
 
-  .title-garamond{
+  .title-garamond {
     font-size: 39px;
   }
 }
@@ -638,11 +643,12 @@
   .technologies__info-title {
     font-size: 26px;
   }
-  .case-studio__title{
+
+  .case-studio__title {
     font-size: 22px;
   }
-  
-  .title-garamond{
+
+  .title-garamond {
     font-size: 26px;
   }
 

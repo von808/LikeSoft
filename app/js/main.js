@@ -1,12 +1,10 @@
-$(function () {
-	const handleChange = (isChecked) => {
-		if (isChecked) {
-			document.body.setAttribute('dark', '');
-		} else {
-			document.body.removeAttribute('dark');
-		}
+const handleChange = (isChecked) => {
+	if (isChecked) {
+		document.body.setAttribute('dark', '');
+	} else {
+		document.body.removeAttribute('dark');
 	}
-});
+}
 
 // function appear() {
 // 	(function() {
