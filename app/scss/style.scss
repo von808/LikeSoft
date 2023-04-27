@@ -996,6 +996,17 @@
   &__img {
     position: relative;
     padding-top: 40px;
+    width: fit-content;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 438px;
+      height: 496px;
+      background-color: $only-blue;
+      top: 0;
+      right: -40px;
+      z-index: -1;
+    }
   }
 
   &__img img {
@@ -1005,15 +1016,15 @@
     z-index: 1001;
   }
 
-  &__blue-block {
-    position: absolute;
-    width: 438px;
-    height: 496px;
-    background-color: $only-blue;
-    top: 0;
-    right: -40px;
-    z-index: 1000;
-  }
+  // &__blue-block {
+  //   position: absolute;
+  //   width: 438px;
+  //   height: 496px;
+  //   background-color: $only-blue;
+  //   top: 0;
+  //   right: -40px;
+  //   z-index: 1000;
+  // }
 }
 
 .mixitup-control-active {
@@ -1352,19 +1363,52 @@
     }
   }
 
-  &__rec {
-    display: flex;
-    gap: 10px;
-    padding: 0 0 80px 0;
+  &__rec-items{
+    max-width: 832px;
+    // display: flex;
+    // gap: 10px;
+  }
+  
+  &__rec-item {
+    margin: 0 5px;
+  }
 
-    &-item {
-      // max-width: 410.8px;
-      width: 100%;
+  &__rec-item-content{
+    max-width: 410px;
+  }
+
+  &__rec {
+    padding: 0 0 80px 0;
+    .slick-dots {
+      padding-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-dots li {
+      list-style: none;
+      margin: 0 4px;
+    }
+
+    .slick-dots li.slick-active button {
+      background-color: $only-blue;
+    }
+
+    .slick-dots button {
+      height: 2px;
+      width: 24px;
       padding: 0;
+      font-size: 0;
+      border: none;
+      border-radius: 1px;
+      background-color: rgba($only-grey, .2);
     }
 
     &-preview {
-      width: 100%;
+      width: 410px;
+      height: 200px;
+      object-fit: cover;
       margin-bottom: 29px;
     }
 
@@ -2075,6 +2119,9 @@
     color: $only-grey;
   }
 
+  .blog__rec{
+    display: flex;
+  }
 }
 
 /* /Media */

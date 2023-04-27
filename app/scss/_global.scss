@@ -289,3 +289,121 @@ a{
     background-color: $only-white;
   }
 }
+
+.form-group{
+  display: none;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown__button.mixitup-control-active{
+  color: $only-blue;
+  background-color: var(--var-dropdown-list-bg);
+}
+.dropdown__button {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: left;
+
+	background: $transparent;
+  color: $only-blue;
+  text-transform: uppercase;
+	border: 1px solid $only-blue;
+	border-radius: 60px;
+	height: 46px;
+
+  padding: 12px 68px 12px 30px;
+
+  font-family: $inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+
+
+	cursor: pointer;
+
+}
+
+// .dropdown__button:focus, .dropdown__button--active {
+// 	outline: none;
+// 	box-shadow: 0px 0px 0px 4px rgba($only-blue, 0.6);
+// }
+
+.dropdown__button::after {
+	content: "";
+	position: absolute;
+	top: 55%;
+	right: 15px;
+	transform: translateY(-50%);
+
+	/* Рисуем треугольник */
+  width: 13px;
+  height: 7px;
+  background-image: url(../images/dropdown-arrow.svg);
+
+	/* Снимаем клик с треугольника */
+	pointer-events: none;
+}
+
+
+.dropdown__list {
+	display: none;
+
+	position: absolute;
+	left: 0;
+	top: 52px;
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	background: var(--var-dropdown-list-bg);
+  color: $only-blue;
+	// box-shadow: 0px 4px 8px rgba($only-blue, 0.6);
+	overflow: hidden;
+
+	border-radius: 22px;
+	width: 100%;
+
+	z-index: 2000;
+  .mixitup-control-active{
+    color: $only-blue;
+    background-color: var(--var-dropdown-list-bg);
+  }
+}
+
+.dropdown__list--visible {
+	display: block;
+}
+
+.dropdown__list-item {
+	margin: 0;
+	padding: 0;
+	border: 1px solid $only-blue;
+	border-bottom: 0px;
+	padding: 12px 30px;
+  text-transform: uppercase;
+	cursor: pointer;
+}
+
+.dropdown__list-item:first-child {
+	border-radius: 22px 22px 0 0;
+}
+
+.dropdown__list-item:last-child {
+	border-radius: 0 0 22px 22px;
+	border-bottom: 1px solid $only-blue;
+}
+
+.dropdown__list-item:hover {
+  color: $only-white;
+	background: $only-blue;
+}
+
+.dropdown__input-hidden {
+	display: none;
+}
