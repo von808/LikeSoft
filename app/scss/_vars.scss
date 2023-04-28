@@ -1,7 +1,4 @@
 $garamond: 'Garamond', sans-serif;
-$inter: 'Inter', sans-serif;
-$gilroy: 'Gilroy', sans-serif;
-$work: 'Work', sans-serif;
 $only-white: #FFFFFF;
 $only-lightgrey: #FAFAFA;
 $only-black: #06111C;
@@ -133,12 +130,6 @@ $black: #000;
   }
 }
 
-// @media (prefers-color-scheme: dark){
-//   :root{
-
-//   }
-// }
-
 $checkbox-first-color: #057AFF;
 $checkbox-second-color: #FFFFFF;
 $checkbox-third-color: #102539;
@@ -149,15 +140,3 @@ $checkbox-width: 31px;
 $checkbox-height: 17px;
 $checkbox-offset: 2px;
 $checkbox-duration: .3s;
-
-// .checkbox{
-//   // not-checked
-//   --first-color: #102539;
-//   --second-color: #FAFAFA;
-//   // checked
-//   --third-color: #057AFF;
-//   --fourth-color: #FFFFFF;
-//   --width: 50px;
-//   --height: 30px;
-//   --offset: 20px;
-// }
