@@ -65,9 +65,12 @@ $(function () {
 		nextArrow: '<img class="slider__arrows slider__arrows--team slider__arrows-right slider__arrows-right--team" src="images/slider-arrow-right.svg" alt="arrow">',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1300,
 				settings: {
 					rows: 2,
+					slidesToShow: 2,
+					dots: true,
+					arrows: false,
 				}
 			},
 		]
@@ -90,6 +93,16 @@ $(function () {
 		variableWidth: true,
 		prevArrow: '<img class="slider__arrows slider__arrows-left slider__arrows-left--revievs" src="images/slider-arrow-left.svg" alt="arrow">',
 		nextArrow: '<img class="slider__arrows slider__arrows-right slider__arrows-right--revievs" src="images/slider-arrow-right.svg" alt="arrow">',
+		responsive: [
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 2,
+					dots: true,
+					arrows: false,
+				}
+			},
+		]
 	});
 
 	$('.blog__rec-items').slick({
@@ -104,6 +117,32 @@ $(function () {
 		responsive: [
 			{
 				breakpoint: 940,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+		]
+	});
+	$('.media-blog__rec-items').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		dots: true,
+		arrows: false,
+		adaptiveHeight: false,
+		centerMode: false,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 1300,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2

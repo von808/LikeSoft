@@ -1812,7 +1812,7 @@
 
   &__title {
     font-size: 52px;
-    line-height: 62px;
+    line-height: 120%;
     margin-bottom: 60px;
   }
 
@@ -2053,6 +2053,14 @@
 
   .blog__rec{
     display: flex;
+  }
+  .blog__rec-item{
+    max-width: 387px;
+  }
+
+  &-blog__rec-items{
+    max-width: 1191px;
+    margin: 0 auto;
   }
 }
 
