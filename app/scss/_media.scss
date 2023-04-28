@@ -576,6 +576,53 @@
     margin-bottom: 30px;
     min-width: 332px;
   }
+
+  .case {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+    min-height: unset;
+    height: 430px;
+
+    background-image: url(../images/cases-light-bg-1.svg);
+    background-size: auto;
+    background-position: center;
+  }
+
+  .case__card {
+    margin: 0;
+    width: 380px;
+    position: absolute;
+    top: 0;
+  }
+
+  .case__info {
+    margin: 0 auto;
+    background: #fff;
+    width: 90%;
+    padding: 20px 10px;
+    // transform: translateY(-75px);
+    // position: absolute;
+    bottom: 0;
+  }
+
+  .cases__inner {
+    margin: 0 -10px;
+  }
+
+  .case__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .case__stack {
+    margin-bottom: 20px;
+  }
+
+  .case-bg-1 {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {

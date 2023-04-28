@@ -226,3 +226,30 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 		}
 	});
 });
+
+function onEntry(entry) {
+	entry.forEach(change => {
+		if (change.isIntersecting) {
+			change.target.classList.add('show');
+		} else {
+			change.target.classList.remove('show');
+		}
+	});
+}
+
+let options = {
+	threshold: [0.5]
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.case-bg-1');
+
+for (let elm of elements) {
+	observer.observe(elm);
+}
+
+let observer2 = new IntersectionObserver(onEntry, options);
+let elements2 = document.querySelectorAll('.case-bg-2');
+
+for (let elm2 of elements2) {
+	observer2.observe(elm2);
+}

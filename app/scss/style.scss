@@ -444,17 +444,24 @@
     margin: 105px -130px 0 0;
     object-fit: contain;
     width: 808px;
-  position: relative;
-
+    position: relative;
   }
+}
+
+.cases__inner {
+  position: relative;
 }
 
 .case-bg-1 {
   position: absolute;
+  top: 0;
   left: 63%;
   height: 100%;
   z-index: -1;
   width: 50vw;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.5s;
   // background-image: url(../images/cases-light-bg-1.svg);
   // background-repeat: no-repeat;
   // background-position: right;
@@ -463,20 +470,48 @@
 
 .case-bg-2 {
   position: absolute;
-  left: 75%;
-  height: 100%;
+  top: 45%;
+  left: 63%;
+  height: 55%;
   z-index: -1;
   width: 50vw;
-  background-image: url(../images/cases-light-bg-2.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+  object-fit: cover;
   opacity: 0;
+  transition: all 0.5s;
+  // background-image: url(../images/cases-light-bg-1.svg);
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // background-size: cover;
 }
+
+.case-bg-1.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.case-bg-2.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+// .case-bg-2 {
+//   position: absolute;
+//   left: 75%;
+//   height: 100%;
+//   z-index: -1;
+//   width: 50vw;
+//   background-image: url(../images/cases-light-bg-2.svg);
+//   background-repeat: no-repeat;
+//   background-position: right;
+//   background-size: cover;
+//   opacity: 0;
+// }
 
 .why {
   padding: 113px 0 110px;
-
+  position: relative;
+  z-index: 1;
+  background: #fff;
   &__inner {
     max-width: 1140px;
     color: var(--var-services-text);
