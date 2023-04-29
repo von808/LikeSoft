@@ -462,10 +462,6 @@
   object-fit: cover;
   opacity: 0;
   transition: all 0.5s;
-  // background-image: url(../images/cases-light-bg-1.svg);
-  // background-repeat: no-repeat;
-  // background-position: right;
-  // background-size: cover;
 }
 
 .case-bg-2 {
@@ -478,10 +474,6 @@
   object-fit: cover;
   opacity: 0;
   transition: all 0.5s;
-  // background-image: url(../images/cases-light-bg-1.svg);
-  // background-repeat: no-repeat;
-  // background-position: right;
-  // background-size: cover;
 }
 
 .case-bg-1.show {
@@ -493,19 +485,6 @@
   opacity: 1;
   transition: all 0.5s;
 }
-
-// .case-bg-2 {
-//   position: absolute;
-//   left: 75%;
-//   height: 100%;
-//   z-index: -1;
-//   width: 50vw;
-//   background-image: url(../images/cases-light-bg-2.svg);
-//   background-repeat: no-repeat;
-//   background-position: right;
-//   background-size: cover;
-//   opacity: 0;
-// }
 
 .why {
   padding: 113px 0 110px;
