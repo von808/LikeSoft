@@ -4,6 +4,34 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .team .slider {
+    max-width: 616px;
+    margin: 0 auto 40px;
+  }
+  .team .slider__item {
+    margin-bottom: 30px;
+  }
+  .revievs__slider-items {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .revievs .slider__item{
+    margin: 0;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0 5px;
+  }
+  .revievs__item {
+    width: 300px;
+    padding: 20px 10px;
+  }
+  .media-blog__rec-items{
+    max-width: 794px;
+  }
+}
+
 @media (max-width: 1140px) {
   .tabs__item{
     flex-direction: column-reverse;
@@ -173,28 +201,26 @@
 }
 
 @media (max-width: 940px) {
-  .blog__rec-items {
-    max-width: 323px;
-    margin: 0 auto;
-  }
-  .blog__rec-content{
-    max-width: 303px;
-    padding: 0 5px;
-  }
-  .blog__rec-item{
+  .news .blog__rec-item{
     margin: 0;
   }
   .blog__rec-item-content{
     max-width: none;
     width: 100%;
   }
-  .blog__rec-preview{
+  .news .blog__rec-preview{
     width: 323px;
     height: 160px;
     padding: 0 5px;
   }
   .blog__rec-title{
     font-size: 24px;
+  }
+  .media-blog__rec-items {
+    max-width: 626px;
+  }
+  .media .blog__rec-item {
+    max-width: 303px;
   }
 }
 
@@ -416,15 +442,114 @@
     margin: -8px 0 20px 25.5px;
   }
 
-  .blog {
-
-    &__inner {
-      width: 100%;
-    }
+  .blog__inner {
+    width: 100%;
   }
 
-  .blog__rec-item {
+  .blog__title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .blog__subtitle {
+    font-size: 16px;
     margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .blog .blog__item-preview {
+    width: 109%;
+    margin: 0 0 15px -15px;
+  }
+
+  .blog__item-content {
+    padding: 0;
+  }
+
+  .blog__item-hashtag {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .blog__item-date {
+    margin-bottom: 20px;
+  }
+
+  .blog__item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .blog__item-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .blog__item {
+    padding: 0 0 40px 0;
+  }
+
+  .blog .blog__rec {
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+
+  .blog .blog__rec-item {
+    margin: 0 0 40px 0;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog .blog__rec-item:last-child {
+    margin: 0;
+  }
+
+  .blog .blog__rec-preview {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .blog__rec-title {
+    padding: 0;
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+
+  .blog__rec-content {
+    max-width: 303px;
+    padding: 0 5px;
+    padding: 0;
+    order: -1;
+  }
+
+  .blog__rec-text {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .blog__rec-author {
+    padding: 0;
+  }
+
+  .blog__list {
+    padding: 0;
+  }
+
+  .blog__list-item:last-child {
+    padding: 0;
+  }
+
+  .blog__list-title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .blog__list-text {
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .dots-box h3 {
@@ -433,6 +558,125 @@
 
   .dots-box {
     height: 50px;
+  }
+  .blog__rec-items {
+    max-width: 323px;
+    margin: 0 auto;
+  }
+
+  .about {
+    padding: 80px 0;
+  }
+
+  .about__inner {
+    flex-wrap: wrap-reverse;
+  }
+
+  .about__content {
+    max-width: unset;
+  }
+
+  .about__poster {
+    max-width: unset;
+    max-height: unset;
+    margin-bottom: 60px;
+  }
+
+  .about__title {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+
+  .about__text {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .values {
+    margin-bottom: 80px;
+  }
+
+  .values__content-top {
+    margin-bottom: 40px;
+  }
+
+  .values__features {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  // .team .slider__item {
+  //   margin-bottom: 30px;
+  //   min-width: 332px;
+  // }
+
+  .case {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+    min-height: unset;
+    height: 430px;
+
+    background-image: url(../images/cases-light-bg-1.svg);
+    background-size: auto;
+    background-position: center;
+  }
+
+  .case__card {
+    margin: 0;
+    width: 380px;
+    position: absolute;
+    top: 0;
+  }
+
+  .case__info {
+    margin: 0 auto;
+    background: #fff;
+    width: 90%;
+    padding: 20px 10px;
+    // transform: translateY(-75px);
+    // position: absolute;
+    bottom: 0;
+  }
+
+  .cases__inner {
+    margin: 0 -10px;
+  }
+
+  .case__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .case__stack {
+    margin-bottom: 20px;
+  }
+
+  .case-bg-1 {
+    display: none;
+  }
+  .revievs__slider-items {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0;
+  }
+  .revievs__item {
+    width: 320px;
+  }
+  .media-blog__rec-items {
+    max-width: 300px;
+  }
+  .media .blog__rec-item {
+    max-width: 302px;
+    margin: 0;
+  }
+  .media .blog__rec-preview {
+    width: 295px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -492,6 +736,17 @@
   .tabs__text-highlighted p {
     max-width: 100%;
   }
+  .team .slider {
+    max-width: 314px;
+    padding: 0;
+    .slick-slide{
+      width: 145px;
+    }
+    .slider__item-photo{
+      width: 145px;
+      height: 150px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
@@ -505,6 +760,7 @@
   }
 
   .news__content-preview {
+    width: 109%;
     margin: 0 -15px;
   }
 
@@ -609,6 +865,10 @@
   .tabs__text-highlighted p{
     font-size: 39px;
   }
+
+  .team__title{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -665,7 +925,6 @@
 
   .trust__items {
     margin-right: 0;
-    gap: 10px;
   }
 
   .trust__item {
@@ -735,6 +994,14 @@
     max-width: 200px;
   }
 
+  .blog {
+    padding: 90px 0 80px;
+  }
+
+  .blog .blog__rec-title{
+    font-size: 18px;
+  }
+
   .blog__rec-title{
     font-size: 22px;
   }
@@ -791,5 +1058,18 @@
 
   .tabs__text-highlighted p{
     font-size: 22px;
+  }
+  .team .slick-track{
+    gap: 10px;
+  }
+  .revievs__slider-items {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0;
+  }
+  .revievs__item {
+    width: 300px;
   }
 }
