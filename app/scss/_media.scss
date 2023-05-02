@@ -742,6 +742,10 @@
     .slick-slide{
       width: 145px;
     }
+    .slider__item-photo{
+      width: 145px;
+      height: 150px;
+    }
   }
 }
 
@@ -921,7 +925,6 @@
 
   .trust__items {
     margin-right: 0;
-    gap: 10px;
   }
 
   .trust__item {

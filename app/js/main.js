@@ -76,13 +76,6 @@ $(function () {
 		]
 	});
 
-	// $('.slider').slick({
-	// 	infinite: true,
-	// 	slidesToShow: 4,
-	// 	slidesToScroll: 4,
-	// 	arrows: false,
-	// });
-
 	$('.revievs__slider-items').slick({
 		infinite: true,
 		slidesToShow: 1,
