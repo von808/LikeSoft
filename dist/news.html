@@ -1,436 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News</title>
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header white-header" id="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__left">
-            <div class="logo header__logo white-header__logo">
-              <a class="logo-link" href="https://von808.github.io/LikeSoft">
-                <img class="logo-img" src="images/logo.svg" alt="logo">
-              </a>
-            </div>
-            <nav class="nav">
-              <ul class="nav__menu">
-                <li class="nav__item header__nav-item">
-                  <a href="https://von808.github.io/LikeSoft/industries" class="nav__item-link">Industries</a>
-                </li>
-                <li class="nav__item header__nav-item">
-                  <a href="https://von808.github.io/LikeSoft/blog"
-                    class="nav__item-link nav__item-link--active">Resources and Library</a>
-                </li>
-                <li class="nav__item header__nav-item">
-                  <a href="https://von808.github.io/LikeSoft/services" class="nav__item-link">Services</a>
-                </li>
-                <li class="nav__item header__nav-item">
-                  <a href="https://von808.github.io/LikeSoft/about-us" class="nav__item-link">About us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__right">
-            <label class="checkbox">
-              <svg class="svg-moon svg-black" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22.0048 15.5035C20.4098 15.9467 18.7258 15.9583 17.1248 15.5373C15.5239 15.1162 14.0635 14.2776 12.893 13.107C11.7225 11.9365 10.8838 10.4761 10.4627 8.87519C10.0417 7.27425 10.0533 5.59021 10.4965 3.99527L10.4968 3.99534C8.92365 4.43297 7.49264 5.27516 6.34631 6.43799C5.19998 7.60083 4.37834 9.04373 3.96325 10.623C3.54816 12.2022 3.55409 13.8626 3.98047 15.4388C4.40685 17.0151 5.23879 18.452 6.39341 19.6067C7.54803 20.7613 8.98503 21.5932 10.5612 22.0195C12.1375 22.4459 13.7979 22.4518 15.3771 22.0367C16.9563 21.6216 18.3992 20.8 19.5621 19.6536C20.7249 18.5073 21.5671 17.0763 22.0047 15.5031L22.0048 15.5035Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              <input class="checkbox__input" type="checkbox" name="color-scheme" value="light" aria-label="Светлая"
-                onchange="handleChange(this.checked)" />
-              <span class="checkbox-style"></span>
-              <svg class="svg-sun svg-black" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13 19.0938C16.3655 19.0938 19.0938 16.3655 19.0938 13C19.0938 9.63451 16.3655 6.90625 13 6.90625C9.63451 6.90625 6.90625 9.63451 6.90625 13C6.90625 16.3655 9.63451 19.0938 13 19.0938Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13 3.65625V1.625" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M6.39298 6.39297L4.95667 4.95666" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3.65625 13H1.625" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M6.39304 19.6071L4.95673 21.0434" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13 22.3438V24.375" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M19.6071 19.6071L21.0434 21.0434" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M22.3438 13H24.375" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M19.6071 6.39304L21.0434 4.95673" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </label>
-            <a class="btn btn--c" href="#">contact us</a>
-            <div class="hamburger-menu">
-              <input id="menu__toggle" type="checkbox" />
-              <label class="menu__btn" for="menu__toggle">
-                <span></span>
-              </label>
-              <ul class="menu__box">
-                <li><a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/industries">Industries</a></li>
-                <li><a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/blog">Resources and Library</a></li>
-                <li><a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/services">Services</a></li>
-                <li><a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/about-us">About us</a></li>
-                <li><a class="btn btn--c" href="#">contact us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <section class="news">
+  <body>
+    <div class="wrapper">
+      <header class="header white-header" id="header">
         <div class="container">
-          <div class="news__inner">
-            <h2 class="news__title">LikeSoft Blog</h2>
-            <p class="news__subtitle">
-              Design. Engineering. Lessons learned on our journey.
-            </p>
-
-            <div class="news__blog">
-              <div class="row-left">
-                <a href="#" class="news__blog-hashtag"> # Development </a>
-
-                <div class="news__blog-title">
-                  Get Flutter's offline support in Supabase
-                </div>
-
-                <div class="news__blog-author">
-                  <img class="news__author-photo" src="images/news-page/photo.png" alt="" />
-                  <div class="news__author-data">
-                    <h3 class="news__author-name">By Matías Irland</h3>
-                    <p class="news__author-date">Sep 13, 2022</p>
-                  </div>
-                </div>
-
-                <div class="news__content">
-                  <div class="news__content-text">
-                    <p>
-                      <a href="#" class="onlyblue-text">Supabase</a> is one of
-                      the most well-known open-source alternatives to
-                      Firebase. Although Supabase implements many
-                      <a href="#" class="onlyblue-text">Firebase</a> features,
-                      one that I constantly crave is offline support for the
-                      real-time database.
-                    </p>
-                    <p>
-                      In this blog post, we’ll cover how you can use a local
-                      database as a
-                      <a href="#" class="onlyblue-text">Supabase</a> cache
-                      through <a href="#" class="onlyblue-text">Stock</a>, a
-                      dart package that combines multiple data sources and
-                      gets one data . However, you can apply these concepts
-                      and ideas to diverse situations, such as adding offline
-                      support when using a Rest API.To show how we can achieve
-                      that, we’ll create a simple app that lists all of
-                      Xmartlabs’ open-source projects, demonstrating how Stock
-                      helps us achieve excellent results.
-                    </p>
-                  </div>
-
-                  <div class="news__content-title">Architecture Overview</div>
-                  <div class="news__content-text">
-                    <p>
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </p>
-                    <p>
-                      We’ll have two data sources, a remote and a local data
-                      source, which
-                      <a href="#" class="onlyblue-text">Stock</a> will combine
-                      in the repository.
-                    </p>
-                    <p>
-                      Because we want to use the real-time database, we’ll use
-                      the [Supabase Flutter package]. Although the package
-                      provides many features, you can use Supabase as a REST
-                      API.
-                    </p>
-                    <p>
-                      Your local database will store this data. In our case,
-                      we’ll use
-                      <a href="#" class="onlyblue-text">Floor</a> because it’s
-                      simple and has many features. If you’d prefer to use
-                      another one, there are a bunch of alternatives, such as
-                      <a href="#" class="onlyblue-text">Drift</a> or
-                      <a href="#" class="onlyblue-text">Realm</a>, you can
-                      use.
-                    </p>
-                    <img src="images/blog-page/arch-overview-1.png" alt="" />
-                  </div>
-
-                  <div class="news__content-title">Architecture Overview</div>
-                  <ul class="news__content-text">
-                    <li class="news__content-item disc">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item disc">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item disc">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item disc">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                  </ul>
-
-                  <img class="news__content-preview" src="images/blog-page/arch-overview-2.png" alt="" />
-
-                  <ul class="news__content-text">
-                    <li class="news__content-item decimal">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item decimal">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item decimal">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                    <li class="news__content-item decimal">
-                      Although we want to build a simple app, we’ll use the
-                      repository pattern, one of the most used patterns in
-                      Flutter nowadays. If you don’t know about it, I suggest
-                      checking out
-                      <a href="#" class="onlyblue-text">this blog</a>.
-                    </li>
-                  </ul>
-
-                  <img class="news__content-preview" src="images/news-page/arch_overview.png" alt="" />
-                </div>
-              </div>
-
-              <aside class="row-right">
-                <div class="sidebar">
-                  <div class="sidebar__title">Let's talk</div>
-                  <div class="sidebar__subtitle">
-                    Interested in how we can help you?
-                  </div>
-                  <a class="btn btn--c" href="#">Get in touch</a>
-                </div>
-              </aside>
-            </div>
-
-            <div class="news__blog-title">More From Xmartlabs Blog</div>
-
-            <div class="blog__rec">
-              <div class="blog__rec-items">
-                <div class="blog__rec-item">
-                  <div class="blog__rec-item-content">
-                    <img class="blog__rec-preview" src="images/blog-page/arch-overview-1.png" alt="" />
-                    <div class="blog__rec-content">
-                      <a class="blog__rec-hashtag" href="#"># Development</a>
-                      <p class="blog__rec-date" data-="18"="11"="2022">
-                        Oct 5, 2022
-                      </p>
-                      <div class="blog__rec-title">Introducing stock</div>
-                      <p class="blog__rec-text">
-                        October is a special month for Open Source contributors
-                        thanks to Hacktoberfest taking place. In this wonderful
-                        month, we...
-                      </p>
-                      <a class="blog__rec-author" href="#"> By Matías Irland </a>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="blog__rec-item">
-                  <div class="blog__rec-item-content">
-                    <img class="blog__rec-preview" src="images/blog-page/arch-overview-2.png" alt="" />
-                    <div class="blog__rec-content">
-                      <a class="blog__rec-hashtag" href="#"># Development</a>
-                      <p class="blog__rec-date" data-="18"="11"="2022">
-                        Sep 29, 2022
-                      </p>
-                      <div class="blog__rec-title">
-                        The importance QA in the development process
-                      </div>
-                      <p class="blog__rec-text">
-                        Would you deliver an untested product to a customer?
-                        That’s a question every single company should be asking.
-                        When developing...
-                      </p>
-                      <a class="blog__rec-author" href="#"> By Sofia Techera </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="blog__rec-item">
-                  <div class="blog__rec-item-content">
-                    <img class="blog__rec-preview" src="images/blog-page/arch-overview-1.png" alt="" />
-                    <div class="blog__rec-content">
-                      <a class="blog__rec-hashtag" href="#"># Development</a>
-                      <p class="blog__rec-date" data-="18"="11"="2022">
-                        Oct 5, 2022
-                      </p>
-                      <div class="blog__rec-title">Introducing stock</div>
-                      <p class="blog__rec-text">
-                        October is a special month for Open Source contributors
-                        thanks to Hacktoberfest taking place. In this wonderful
-                        month, we...
-                      </p>
-                      <a class="blog__rec-author" href="#"> By Matías Irland </a>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="blog__rec-item">
-                  <div class="blog__rec-item-content">
-                    <img class="blog__rec-preview" src="images/blog-page/arch-overview-2.png" alt="" />
-                    <div class="blog__rec-content">
-                      <a class="blog__rec-hashtag" href="#"># Development</a>
-                      <p class="blog__rec-date" data-="18"="11"="2022">
-                        Sep 29, 2022
-                      </p>
-                      <div class="blog__rec-title">
-                        The importance QA in the development process
-                      </div>
-                      <p class="blog__rec-text">
-                        Would you deliver an untested product to a customer?
-                        That’s a question every single company should be asking.
-                        When developing...
-                      </p>
-                      <a class="blog__rec-author" href="#"> By Sofia Techera </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__left">
-            <div class="footer__contacts">
-              <div class="logo footer__logo">
-                <a class="logo-link" href="#">
+          <div class="header__inner">
+            <div class="header__left">
+              <div class="logo header__logo white-header__logo">
+                <a class="logo-link" href="https://von808.github.io/LikeSoft">
                   <img class="logo-img" src="images/logo.svg" alt="logo" />
                 </a>
               </div>
-              <a class="phone footer__phone" href="tel:199999999999">+1 999 9999 9999</a>
-              <p class="address footer__address">Fischerinsel 12, Berlin</p>
-              <div class="socials">
-                <div class="socials__item">
-                  <a class="socials__item-link" href="#">
-                    <svg>
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.87597 0.750122C4.48396 0.750122 4.30926 0.756209 3.76254 0.781089C3.21688 0.806076 2.84442 0.892463 2.51853 1.01921C2.18141 1.15013 1.89545 1.32525 1.61056 1.61025C1.32545 1.89515 1.15033 2.18111 1.01898 2.51811C0.891913 2.84412 0.80542 3.21668 0.78086 3.76213C0.756407 4.30885 0.75 4.48365 0.75 5.87566C0.75 7.26767 0.756193 7.44184 0.780967 7.98856C0.806061 8.53422 0.892447 8.90667 1.01909 9.23257C1.15011 9.56968 1.32524 9.85565 1.61024 10.1405C1.89502 10.4256 2.18099 10.6012 2.51788 10.7321C2.844 10.8589 3.21656 10.9453 3.76211 10.9702C4.30883 10.9951 4.48342 11.0012 5.87533 11.0012C7.26745 11.0012 7.44161 10.9951 7.98833 10.9702C8.53399 10.9453 8.90687 10.8589 9.23298 10.7321C9.56999 10.6012 9.85553 10.4256 10.1403 10.1405C10.4254 9.85565 10.6005 9.56968 10.7319 9.23268C10.8579 8.90667 10.9444 8.53411 10.97 7.98867C10.9946 7.44194 11.001 7.26767 11.001 5.87566C11.001 4.48365 10.9946 4.30896 10.97 3.76223C10.9444 3.21658 10.8579 2.84412 10.7319 2.51822C10.6005 2.18111 10.4254 1.89515 10.1403 1.61025C9.8552 1.32514 9.5701 1.15002 9.23267 1.01921C8.90591 0.892463 8.53324 0.806076 7.98759 0.781089C7.44086 0.756209 7.26681 0.750122 5.87437 0.750122H5.87597ZM5.70422 1.67384H5.70424H5.70426L5.87509 1.67389C7.24361 1.67389 7.40582 1.6788 7.94624 1.70336C8.44598 1.72621 8.71721 1.80972 8.89788 1.87987C9.13707 1.97277 9.3076 2.08383 9.48689 2.26322C9.66629 2.44261 9.77734 2.61346 9.87045 2.85266C9.94061 3.03312 10.0242 3.30434 10.047 3.80409C10.0715 4.3444 10.0769 4.50671 10.0769 5.87459C10.0769 7.24247 10.0715 7.40478 10.047 7.9451C10.0241 8.44484 9.94061 8.71606 9.87045 8.89652C9.77755 9.13572 9.66629 9.30603 9.48689 9.48532C9.3075 9.66471 9.13718 9.77577 8.89788 9.86867C8.71742 9.93914 8.44598 10.0224 7.94624 10.0453C7.40592 10.0698 7.24361 10.0752 5.87509 10.0752C4.50647 10.0752 4.34427 10.0698 3.80395 10.0453C3.30421 10.0222 3.03298 9.93872 2.8522 9.86856C2.61301 9.77566 2.44216 9.66461 2.26276 9.48521C2.08337 9.30582 1.97231 9.1354 1.8792 8.8961C1.80904 8.71563 1.72543 8.44441 1.70269 7.94467C1.67813 7.40435 1.67322 7.24204 1.67322 5.87331C1.67322 4.50458 1.67813 4.34312 1.70269 3.8028C1.72554 3.30306 1.80904 3.03184 1.8792 2.85116C1.9721 2.61197 2.08337 2.44112 2.26276 2.26172C2.44216 2.08233 2.61301 1.97128 2.8522 1.87816C3.03287 1.80769 3.30421 1.7244 3.80395 1.70144C4.27678 1.68008 4.46002 1.67368 5.41529 1.67261V1.67389C5.50456 1.67375 5.60059 1.67379 5.70422 1.67384ZM8.61207 2.52548C8.27251 2.52548 7.99701 2.80066 7.99701 3.14033C7.99701 3.4799 8.27251 3.7554 8.61207 3.7554C8.95164 3.7554 9.22714 3.4799 9.22714 3.14033C9.22714 2.80077 8.95164 2.52527 8.61207 2.52527V2.52548ZM3.24634 5.87559C3.24634 4.422 4.42483 3.24347 5.87841 3.24341C7.33204 3.24341 8.51027 4.42196 8.51027 5.87559C8.51027 7.32921 7.33214 8.50723 5.87852 8.50723C4.42489 8.50723 3.24634 7.32921 3.24634 5.87559ZM7.58469 5.87575C7.58469 4.93212 6.8197 4.16724 5.87618 4.16724C4.93254 4.16724 4.16766 4.93212 4.16766 5.87575C4.16766 6.81928 4.93254 7.58426 5.87618 7.58426C6.8197 7.58426 7.58469 6.81928 7.58469 5.87575Z"
-                        fill="#040D16" />
-                    </svg>
-                  </a>
+              <nav class="nav">
+                <ul class="nav__menu">
+                  <li class="nav__item header__nav-item">
+                    <a
+                      href="https://von808.github.io/LikeSoft/industries"
+                      class="nav__item-link"
+                      >Industries</a
+                    >
+                  </li>
+                  <li class="nav__item header__nav-item">
+                    <a
+                      href="https://von808.github.io/LikeSoft/blog"
+                      class="nav__item-link nav__item-link--active"
+                      >Resources and Library</a
+                    >
+                  </li>
+                  <li class="nav__item header__nav-item">
+                    <a
+                      href="https://von808.github.io/LikeSoft/services"
+                      class="nav__item-link"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav__item header__nav-item">
+                    <a
+                      href="https://von808.github.io/LikeSoft/about-us"
+                      class="nav__item-link"
+                      >About us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__right">
+              <label class="checkbox">
+                <svg
+                  class="svg-moon svg-black"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.0048 15.5035C20.4098 15.9467 18.7258 15.9583 17.1248 15.5373C15.5239 15.1162 14.0635 14.2776 12.893 13.107C11.7225 11.9365 10.8838 10.4761 10.4627 8.87519C10.0417 7.27425 10.0533 5.59021 10.4965 3.99527L10.4968 3.99534C8.92365 4.43297 7.49264 5.27516 6.34631 6.43799C5.19998 7.60083 4.37834 9.04373 3.96325 10.623C3.54816 12.2022 3.55409 13.8626 3.98047 15.4388C4.40685 17.0151 5.23879 18.452 6.39341 19.6067C7.54803 20.7613 8.98503 21.5932 10.5612 22.0195C12.1375 22.4459 13.7979 22.4518 15.3771 22.0367C16.9563 21.6216 18.3992 20.8 19.5621 19.6536C20.7249 18.5073 21.5671 17.0763 22.0047 15.5031L22.0048 15.5035Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="color-scheme"
+                  value="light"
+                  aria-label="Светлая"
+                  onchange="handleChange(this.checked)"
+                />
+                <span class="checkbox-style"></span>
+                <svg
+                  class="svg-sun svg-black"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 19.0938C16.3655 19.0938 19.0938 16.3655 19.0938 13C19.0938 9.63451 16.3655 6.90625 13 6.90625C9.63451 6.90625 6.90625 9.63451 6.90625 13C6.90625 16.3655 9.63451 19.0938 13 19.0938Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 3.65625V1.625"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.39298 6.39297L4.95667 4.95666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.65625 13H1.625"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.39304 19.6071L4.95673 21.0434"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 22.3438V24.375"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.6071 19.6071L21.0434 21.0434"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.3438 13H24.375"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.6071 6.39304L21.0434 4.95673"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+              <a class="btn btn--c" href="#">contact us</a>
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/industries"
+                      >Industries</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/blog"
+                      >Resources and Library</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/services"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/about-us"
+                      >About us</a
+                    >
+                  </li>
+                  <li><a class="btn btn--c" href="#">contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="news">
+          <div class="container">
+            <div class="news__inner">
+              <h2 class="news__title">LikeSoft Blog</h2>
+              <p class="news__subtitle">
+                Design. Engineering. Lessons learned on our journey.
+              </p>
+
+              <div class="news__blog">
+                <div class="row-left">
+                  <a href="#" class="news__blog-hashtag"> # Development </a>
+
+                  <div class="news__blog-title">
+                    Get Flutter's offline support in Supabase
+                  </div>
+
+                  <div class="news__blog-author">
+                    <img
+                      class="news__author-photo"
+                      src="images/news-page/photo.png"
+                      alt=""
+                    />
+                    <div class="news__author-data">
+                      <h3 class="news__author-name">By Matías Irland</h3>
+                      <time class="news__author-date" datetime="2022-09-13"
+                        >Sep 13, 2022</time
+                      >
+                    </div>
+                  </div>
+
+                  <div class="news__content">
+                    <div class="news__content-text">
+                      <p>
+                        <a href="#" class="onlyblue-text">Supabase</a> is one of
+                        the most well-known open-source alternatives to
+                        Firebase. Although Supabase implements many
+                        <a href="#" class="onlyblue-text">Firebase</a> features,
+                        one that I constantly crave is offline support for the
+                        real-time database.
+                      </p>
+                      <p>
+                        In this blog post, we’ll cover how you can use a local
+                        database as a
+                        <a href="#" class="onlyblue-text">Supabase</a> cache
+                        through <a href="#" class="onlyblue-text">Stock</a>, a
+                        dart package that combines multiple data sources and
+                        gets one data . However, you can apply these concepts
+                        and ideas to diverse situations, such as adding offline
+                        support when using a Rest API.To show how we can achieve
+                        that, we’ll create a simple app that lists all of
+                        Xmartlabs’ open-source projects, demonstrating how Stock
+                        helps us achieve excellent results.
+                      </p>
+                    </div>
+
+                    <div class="news__content-title">Architecture Overview</div>
+                    <div class="news__content-text">
+                      <p>
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </p>
+                      <p>
+                        We’ll have two data sources, a remote and a local data
+                        source, which
+                        <a href="#" class="onlyblue-text">Stock</a> will combine
+                        in the repository.
+                      </p>
+                      <p>
+                        Because we want to use the real-time database, we’ll use
+                        the [Supabase Flutter package]. Although the package
+                        provides many features, you can use Supabase as a REST
+                        API.
+                      </p>
+                      <p>
+                        Your local database will store this data. In our case,
+                        we’ll use
+                        <a href="#" class="onlyblue-text">Floor</a> because it’s
+                        simple and has many features. If you’d prefer to use
+                        another one, there are a bunch of alternatives, such as
+                        <a href="#" class="onlyblue-text">Drift</a> or
+                        <a href="#" class="onlyblue-text">Realm</a>, you can
+                        use.
+                      </p>
+                      <img src="images/blog-page/arch-overview-1.png" alt="" />
+                    </div>
+
+                    <div class="news__content-title">Architecture Overview</div>
+                    <ul class="news__content-text">
+                      <li class="news__content-item disc">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item disc">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item disc">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item disc">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                    </ul>
+
+                    <img
+                      class="news__content-preview"
+                      src="images/blog-page/arch-overview-2.png"
+                      alt=""
+                    />
+
+                    <ul class="news__content-text">
+                      <li class="news__content-item decimal">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item decimal">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item decimal">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                      <li class="news__content-item decimal">
+                        Although we want to build a simple app, we’ll use the
+                        repository pattern, one of the most used patterns in
+                        Flutter nowadays. If you don’t know about it, I suggest
+                        checking out
+                        <a href="#" class="onlyblue-text">this blog</a>.
+                      </li>
+                    </ul>
+
+                    <img
+                      class="news__content-preview"
+                      src="images/news-page/arch_overview.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div class="socials__item">
-                  <a class="socials__item-link" href="#">
-                    <svg>
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M6.81585 2.79329L6.84349 3.24744L6.38286 3.19183C4.70617 2.97866 3.24137 2.25572 1.99767 1.04155L1.38964 0.439097L1.23303 0.883983C0.901377 1.87571 1.11327 2.92304 1.80421 3.62745C2.17271 4.01672 2.0898 4.07233 1.45413 3.84062C1.23303 3.76647 1.03957 3.71086 1.02114 3.73867C0.956653 3.80355 1.17775 4.64698 1.35279 4.98064C1.59232 5.44407 2.08059 5.89822 2.61492 6.16701L3.06633 6.38018L2.532 6.38945C2.0161 6.38945 1.99767 6.39872 2.05295 6.59336C2.2372 7.19581 2.96499 7.83533 3.7757 8.11338L4.34688 8.30802L3.8494 8.60461C3.1124 9.03096 2.24641 9.27194 1.38043 9.29048C0.965865 9.29975 0.625 9.33682 0.625 9.36463C0.625 9.45731 1.74893 9.97634 2.40303 10.1803C4.36531 10.7827 6.69609 10.5232 8.44648 9.49438C9.69018 8.76218 10.9339 7.30703 11.5143 5.89822C11.8275 5.14748 12.1407 3.77574 12.1407 3.11768C12.1407 2.69133 12.1684 2.63572 12.6843 2.12596C12.9883 1.82937 13.2739 1.50497 13.3291 1.41229C13.4213 1.23618 13.4121 1.23618 12.9422 1.39375C12.1591 1.6718 12.0486 1.63473 12.4355 1.21765C12.7211 0.921057 13.062 0.383486 13.062 0.225923C13.062 0.198117 12.9238 0.24446 12.7672 0.327876C12.6014 0.42056 12.2328 0.559587 11.9565 0.643003L11.459 0.800567L11.0076 0.494708C10.7588 0.327876 10.4088 0.142507 10.2245 0.0868957C9.75467 -0.0428627 9.03608 -0.0243258 8.61231 0.12397C7.46073 0.54105 6.73294 1.61619 6.81585 2.79329Z"
-                        fill="#040D16" />
-                    </svg>
-                  </a>
-                </div>
-                <div class="socials__item">
-                  <a class="socials__item-link" href="#">
-                    <svg>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.00012H0V12.0001H3V4.00012Z"
-                        fill="#040D16" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M3 1.4996C2.98269 0.648428 2.42091 0.00012207 1.50865 0.00012207C0.5964 0.00012207 0 0.648428 0 1.4996C0 2.33315 0.578773 3.00012 1.47404 3.00012H1.49108C2.42091 3.00012 3 2.33315 3 1.4996Z"
-                        fill="#040D16" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M13 7.51831C13 5.1175 11.7072 4.00012 9.98283 4.00012C8.59152 4.00012 7.96861 4.75877 7.62081 5.29098V4.18387H5C5.03454 4.91731 5 12.0001 5 12.0001H7.62081V7.63488C7.62081 7.40128 7.63781 7.16825 7.7071 7.001C7.89649 6.53431 8.32771 6.05113 9.05168 6.05113C10.0003 6.05113 10.3795 6.76786 10.3795 7.81822V11.9999H12.9999L13 7.51831Z"
-                        fill="#040D16" />
-                    </svg>
-                  </a>
-                </div>
-                <div class="socials__item">
-                  <a class="socials__item-link" href="#">
-                    <svg>
-                      <path
-                        d="M11.7 0.00012207H1.3C0.585 0.00012207 0.00649999 0.562622 0.00649999 1.25012L0 8.75012C0 9.43762 0.585 10.0001 1.3 10.0001H11.7C12.415 10.0001 13 9.43762 13 8.75012V1.25012C13 0.562622 12.415 0.00012207 11.7 0.00012207ZM11.7 2.50012L6.5 5.62512L1.3 2.50012V1.25012L6.5 4.37512L11.7 1.25012V2.50012Z"
-                        fill="#040D16" />
-                    </svg>
-                  </a>
+
+                <aside class="row-right">
+                  <div class="sidebar">
+                    <div class="sidebar__title">Let's talk</div>
+                    <div class="sidebar__subtitle">
+                      Interested in how we can help you?
+                    </div>
+                    <a class="btn btn--c" href="#">Get in touch</a>
+                  </div>
+                </aside>
+              </div>
+
+              <div class="news__blog-title">More From Xmartlabs Blog</div>
+
+              <div class="blog__rec">
+                <div class="blog__rec-items">
+                  <div class="blog__rec-item">
+                    <div class="blog__rec-item-content">
+                      <img
+                        class="blog__rec-preview"
+                        src="images/blog-page/arch-overview-1.png"
+                        alt=""
+                      />
+                      <div class="blog__rec-content">
+                        <a class="blog__rec-hashtag" href="#"># Development</a>
+                        <time class="blog__rec-date" datetime="2022-10-05"
+                          >Oct 5, 2022</time
+                        >
+                        <div class="blog__rec-title">Introducing stock</div>
+                        <p class="blog__rec-text">
+                          October is a special month for Open Source
+                          contributors thanks to Hacktoberfest taking place. In
+                          this wonderful month, we...
+                        </p>
+                        <a class="blog__rec-author" href="#">
+                          By Matías Irland
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="blog__rec-item">
+                    <div class="blog__rec-item-content">
+                      <img
+                        class="blog__rec-preview"
+                        src="images/blog-page/arch-overview-2.png"
+                        alt=""
+                      />
+                      <div class="blog__rec-content">
+                        <a class="blog__rec-hashtag" href="#"># Development</a>
+                        <time class="blog__rec-date" datetime="2022-09-29"
+                          >Sep 29, 2022</time
+                        >
+                        <div class="blog__rec-title">
+                          The importance QA in the development process
+                        </div>
+                        <p class="blog__rec-text">
+                          Would you deliver an untested product to a customer?
+                          That’s a question every single company should be
+                          asking. When developing...
+                        </p>
+                        <a class="blog__rec-author" href="#">
+                          By Sofia Techera
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="blog__rec-item">
+                    <div class="blog__rec-item-content">
+                      <img
+                        class="blog__rec-preview"
+                        src="images/blog-page/arch-overview-1.png"
+                        alt=""
+                      />
+                      <div class="blog__rec-content">
+                        <a class="blog__rec-hashtag" href="#"># Development</a>
+                        <time class="blog__rec-date" datetime="2022-10-05"
+                          >Oct 5, 2022</time
+                        >
+                        <div class="blog__rec-title">Introducing stock</div>
+                        <p class="blog__rec-text">
+                          October is a special month for Open Source
+                          contributors thanks to Hacktoberfest taking place. In
+                          this wonderful month, we...
+                        </p>
+                        <a class="blog__rec-author" href="#">
+                          By Matías Irland
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="blog__rec-item">
+                    <div class="blog__rec-item-content">
+                      <img
+                        class="blog__rec-preview"
+                        src="images/blog-page/arch-overview-2.png"
+                        alt=""
+                      />
+                      <div class="blog__rec-content">
+                        <a class="blog__rec-hashtag" href="#"># Development</a>
+                        <time class="blog__rec-date" datetime="2022-09-29"
+                          >Sep 29, 2022</time
+                        >
+                        <div class="blog__rec-title">
+                          The importance QA in the development process
+                        </div>
+                        <p class="blog__rec-text">
+                          Would you deliver an untested product to a customer?
+                          That’s a question every single company should be
+                          asking. When developing...
+                        </p>
+                        <a class="blog__rec-author" href="#">
+                          By Sofia Techera
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer__right">
-            <nav class="nav black-header footer__nav">
-              <h2 class="footer__nav-title">Navigation</h2>
-              <ul class="nav__menu footer__nav-menu">
-                <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">Industries</a>
-                </li>
-                <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">Resources and Library</a>
-                </li>
-                <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">Services</a>
-                </li>
-                <li class="nav__item footer__nav-item">
-                  <a href="" class="nav__item-link">About us</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="footer__form">
-              <form class="footer__form-inner" action="#">
-                <h2 class="footer__form-title">Newsletter:</h2>
-                <input class="footer__form-mail" type="mail" placeholder="Your email" required />
-                <button class="footer__form-btn" type="submit"></button>
-              </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="footer__contacts">
+                <div class="logo footer__logo">
+                  <a class="logo-link" href="#">
+                    <img class="logo-img" src="images/logo.svg" alt="logo" />
+                  </a>
+                </div>
+                <a class="phone footer__phone" href="tel:199999999999"
+                  >+1 999 9999 9999</a
+                >
+                <p class="address footer__address">Fischerinsel 12, Berlin</p>
+                <div class="socials">
+                  <div class="socials__item">
+                    <a class="socials__item-link" href="#">
+                      <svg>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.87597 0.750122C4.48396 0.750122 4.30926 0.756209 3.76254 0.781089C3.21688 0.806076 2.84442 0.892463 2.51853 1.01921C2.18141 1.15013 1.89545 1.32525 1.61056 1.61025C1.32545 1.89515 1.15033 2.18111 1.01898 2.51811C0.891913 2.84412 0.80542 3.21668 0.78086 3.76213C0.756407 4.30885 0.75 4.48365 0.75 5.87566C0.75 7.26767 0.756193 7.44184 0.780967 7.98856C0.806061 8.53422 0.892447 8.90667 1.01909 9.23257C1.15011 9.56968 1.32524 9.85565 1.61024 10.1405C1.89502 10.4256 2.18099 10.6012 2.51788 10.7321C2.844 10.8589 3.21656 10.9453 3.76211 10.9702C4.30883 10.9951 4.48342 11.0012 5.87533 11.0012C7.26745 11.0012 7.44161 10.9951 7.98833 10.9702C8.53399 10.9453 8.90687 10.8589 9.23298 10.7321C9.56999 10.6012 9.85553 10.4256 10.1403 10.1405C10.4254 9.85565 10.6005 9.56968 10.7319 9.23268C10.8579 8.90667 10.9444 8.53411 10.97 7.98867C10.9946 7.44194 11.001 7.26767 11.001 5.87566C11.001 4.48365 10.9946 4.30896 10.97 3.76223C10.9444 3.21658 10.8579 2.84412 10.7319 2.51822C10.6005 2.18111 10.4254 1.89515 10.1403 1.61025C9.8552 1.32514 9.5701 1.15002 9.23267 1.01921C8.90591 0.892463 8.53324 0.806076 7.98759 0.781089C7.44086 0.756209 7.26681 0.750122 5.87437 0.750122H5.87597ZM5.70422 1.67384H5.70424H5.70426L5.87509 1.67389C7.24361 1.67389 7.40582 1.6788 7.94624 1.70336C8.44598 1.72621 8.71721 1.80972 8.89788 1.87987C9.13707 1.97277 9.3076 2.08383 9.48689 2.26322C9.66629 2.44261 9.77734 2.61346 9.87045 2.85266C9.94061 3.03312 10.0242 3.30434 10.047 3.80409C10.0715 4.3444 10.0769 4.50671 10.0769 5.87459C10.0769 7.24247 10.0715 7.40478 10.047 7.9451C10.0241 8.44484 9.94061 8.71606 9.87045 8.89652C9.77755 9.13572 9.66629 9.30603 9.48689 9.48532C9.3075 9.66471 9.13718 9.77577 8.89788 9.86867C8.71742 9.93914 8.44598 10.0224 7.94624 10.0453C7.40592 10.0698 7.24361 10.0752 5.87509 10.0752C4.50647 10.0752 4.34427 10.0698 3.80395 10.0453C3.30421 10.0222 3.03298 9.93872 2.8522 9.86856C2.61301 9.77566 2.44216 9.66461 2.26276 9.48521C2.08337 9.30582 1.97231 9.1354 1.8792 8.8961C1.80904 8.71563 1.72543 8.44441 1.70269 7.94467C1.67813 7.40435 1.67322 7.24204 1.67322 5.87331C1.67322 4.50458 1.67813 4.34312 1.70269 3.8028C1.72554 3.30306 1.80904 3.03184 1.8792 2.85116C1.9721 2.61197 2.08337 2.44112 2.26276 2.26172C2.44216 2.08233 2.61301 1.97128 2.8522 1.87816C3.03287 1.80769 3.30421 1.7244 3.80395 1.70144C4.27678 1.68008 4.46002 1.67368 5.41529 1.67261V1.67389C5.50456 1.67375 5.60059 1.67379 5.70422 1.67384ZM8.61207 2.52548C8.27251 2.52548 7.99701 2.80066 7.99701 3.14033C7.99701 3.4799 8.27251 3.7554 8.61207 3.7554C8.95164 3.7554 9.22714 3.4799 9.22714 3.14033C9.22714 2.80077 8.95164 2.52527 8.61207 2.52527V2.52548ZM3.24634 5.87559C3.24634 4.422 4.42483 3.24347 5.87841 3.24341C7.33204 3.24341 8.51027 4.42196 8.51027 5.87559C8.51027 7.32921 7.33214 8.50723 5.87852 8.50723C4.42489 8.50723 3.24634 7.32921 3.24634 5.87559ZM7.58469 5.87575C7.58469 4.93212 6.8197 4.16724 5.87618 4.16724C4.93254 4.16724 4.16766 4.93212 4.16766 5.87575C4.16766 6.81928 4.93254 7.58426 5.87618 7.58426C6.8197 7.58426 7.58469 6.81928 7.58469 5.87575Z"
+                          fill="#040D16"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a class="socials__item-link" href="#">
+                      <svg>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.81585 2.79329L6.84349 3.24744L6.38286 3.19183C4.70617 2.97866 3.24137 2.25572 1.99767 1.04155L1.38964 0.439097L1.23303 0.883983C0.901377 1.87571 1.11327 2.92304 1.80421 3.62745C2.17271 4.01672 2.0898 4.07233 1.45413 3.84062C1.23303 3.76647 1.03957 3.71086 1.02114 3.73867C0.956653 3.80355 1.17775 4.64698 1.35279 4.98064C1.59232 5.44407 2.08059 5.89822 2.61492 6.16701L3.06633 6.38018L2.532 6.38945C2.0161 6.38945 1.99767 6.39872 2.05295 6.59336C2.2372 7.19581 2.96499 7.83533 3.7757 8.11338L4.34688 8.30802L3.8494 8.60461C3.1124 9.03096 2.24641 9.27194 1.38043 9.29048C0.965865 9.29975 0.625 9.33682 0.625 9.36463C0.625 9.45731 1.74893 9.97634 2.40303 10.1803C4.36531 10.7827 6.69609 10.5232 8.44648 9.49438C9.69018 8.76218 10.9339 7.30703 11.5143 5.89822C11.8275 5.14748 12.1407 3.77574 12.1407 3.11768C12.1407 2.69133 12.1684 2.63572 12.6843 2.12596C12.9883 1.82937 13.2739 1.50497 13.3291 1.41229C13.4213 1.23618 13.4121 1.23618 12.9422 1.39375C12.1591 1.6718 12.0486 1.63473 12.4355 1.21765C12.7211 0.921057 13.062 0.383486 13.062 0.225923C13.062 0.198117 12.9238 0.24446 12.7672 0.327876C12.6014 0.42056 12.2328 0.559587 11.9565 0.643003L11.459 0.800567L11.0076 0.494708C10.7588 0.327876 10.4088 0.142507 10.2245 0.0868957C9.75467 -0.0428627 9.03608 -0.0243258 8.61231 0.12397C7.46073 0.54105 6.73294 1.61619 6.81585 2.79329Z"
+                          fill="#040D16"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a class="socials__item-link" href="#">
+                      <svg>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3 4.00012H0V12.0001H3V4.00012Z"
+                          fill="#040D16"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3 1.4996C2.98269 0.648428 2.42091 0.00012207 1.50865 0.00012207C0.5964 0.00012207 0 0.648428 0 1.4996C0 2.33315 0.578773 3.00012 1.47404 3.00012H1.49108C2.42091 3.00012 3 2.33315 3 1.4996Z"
+                          fill="#040D16"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 7.51831C13 5.1175 11.7072 4.00012 9.98283 4.00012C8.59152 4.00012 7.96861 4.75877 7.62081 5.29098V4.18387H5C5.03454 4.91731 5 12.0001 5 12.0001H7.62081V7.63488C7.62081 7.40128 7.63781 7.16825 7.7071 7.001C7.89649 6.53431 8.32771 6.05113 9.05168 6.05113C10.0003 6.05113 10.3795 6.76786 10.3795 7.81822V11.9999H12.9999L13 7.51831Z"
+                          fill="#040D16"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a class="socials__item-link" href="#">
+                      <svg>
+                        <path
+                          d="M11.7 0.00012207H1.3C0.585 0.00012207 0.00649999 0.562622 0.00649999 1.25012L0 8.75012C0 9.43762 0.585 10.0001 1.3 10.0001H11.7C12.415 10.0001 13 9.43762 13 8.75012V1.25012C13 0.562622 12.415 0.00012207 11.7 0.00012207ZM11.7 2.50012L6.5 5.62512L1.3 2.50012V1.25012L6.5 4.37512L11.7 1.25012V2.50012Z"
+                          fill="#040D16"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <nav class="nav black-header footer__nav">
+                <h2 class="footer__nav-title">Navigation</h2>
+                <ul class="nav__menu footer__nav-menu">
+                  <li class="nav__item footer__nav-item">
+                    <a href="" class="nav__item-link">Industries</a>
+                  </li>
+                  <li class="nav__item footer__nav-item">
+                    <a href="" class="nav__item-link">Resources and Library</a>
+                  </li>
+                  <li class="nav__item footer__nav-item">
+                    <a href="" class="nav__item-link">Services</a>
+                  </li>
+                  <li class="nav__item footer__nav-item">
+                    <a href="" class="nav__item-link">About us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__form">
+                <form class="footer__form-inner" action="#">
+                  <h2 class="footer__form-title">Newsletter:</h2>
+                  <input
+                    class="footer__form-mail"
+                    type="mail"
+                    placeholder="Your email"
+                    required
+                  />
+                  <button class="footer__form-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              <a href="#"
+                ><span>Privacy policy</span>© LikeSoft 2021. All rights
+                reserved.</a
+              >
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="footer__copyright">
-            <a href="#"><span>Privacy policy</span>© LikeSoft 2021. All rights
-              reserved.</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

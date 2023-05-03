@@ -4,6 +4,34 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .team .slider {
+    max-width: 616px;
+    margin: 0 auto 40px;
+  }
+  .team .slider__item {
+    margin-bottom: 30px;
+  }
+  .revievs__slider-items {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .revievs .slider__item{
+    margin: 0;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0 5px;
+  }
+  .revievs__item {
+    width: 300px;
+    padding: 20px 10px;
+  }
+  .media-blog__rec-items{
+    max-width: 794px;
+  }
+}
+
 @media (max-width: 1140px) {
   .tabs__item{
     flex-direction: column-reverse;
@@ -187,6 +215,12 @@
   }
   .blog__rec-title{
     font-size: 24px;
+  }
+  .media-blog__rec-items {
+    max-width: 626px;
+  }
+  .media .blog__rec-item {
+    max-width: 303px;
   }
 }
 
@@ -583,10 +617,10 @@
   }
 
 
-  .team .slider__item {
-    margin-bottom: 30px;
-    min-width: 332px;
-  }
+  // .team .slider__item {
+  //   margin-bottom: 30px;
+  //   min-width: 332px;
+  // }
 
   .case {
     flex-direction: column-reverse;
@@ -633,6 +667,27 @@
 
   .case-bg-1 {
     display: none;
+  }
+  .revievs__slider-items {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0;
+  }
+  .revievs__item {
+    width: 320px;
+  }
+  .media-blog__rec-items {
+    max-width: 300px;
+  }
+  .media .blog__rec-item {
+    max-width: 302px;
+    margin: 0;
+  }
+  .media .blog__rec-preview {
+    width: 295px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -691,6 +746,17 @@
 
   .tabs__text-highlighted p {
     max-width: 100%;
+  }
+  .team .slider {
+    max-width: 314px;
+    padding: 0;
+    .slick-slide{
+      width: 145px;
+    }
+    .slider__item-photo{
+      width: 145px;
+      height: 150px;
+    }
   }
 }
 
@@ -810,6 +876,10 @@
   .tabs__text-highlighted p{
     font-size: 39px;
   }
+
+  .team__title{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -866,7 +936,6 @@
 
   .trust__items {
     margin-right: 0;
-    gap: 10px;
   }
 
   .trust__item {
@@ -1000,5 +1069,18 @@
 
   .tabs__text-highlighted p{
     font-size: 22px;
+  }
+  .team .slick-track{
+    gap: 10px;
+  }
+  .revievs__slider-items {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .revievs__slider .slick-slide{
+    margin: 0;
+  }
+  .revievs__item {
+    width: 300px;
   }
 }
