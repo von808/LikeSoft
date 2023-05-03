@@ -103,23 +103,46 @@
               <label class="menu__btn" for="menu__toggle">
                 <span></span>
               </label>
-              <ul class="menu__box">
-                <li>
-                  <a class="menu__item nav__item-link"
-                    href="https://von808.github.io/LikeSoft/industries">Industries</a>
-                </li>
-                <li>
-                  <a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/blog">Resources and
-                    Library</a>
-                </li>
-                <li>
-                  <a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/services">Services</a>
-                </li>
-                <li>
-                  <a class="menu__item nav__item-link" href="https://von808.github.io/LikeSoft/about-us">About us</a>
-                </li>
-                <li><a class="btn" href="#">contact us</a></li>
-              </ul>
+              <button class="btn" data-modal="contact-modal" type="button">contact us</button>
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/industries"
+                      >Industries</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/blog"
+                      >Resources and Library</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/services"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="menu__item nav__item-link"
+                      href="https://von808.github.io/LikeSoft/about-us"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <button class="btn" data-modal="contact-modal" type="button">contact us</button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -311,47 +334,43 @@
               </div>
               <div class="services__slider">
                 <div class="services__slider-item">
-                  <div class="services__slider-content" style="
-                        background-image: url(images/services-slider-bg-1.svg);
-                      ">
-                    <p class="services__slider-text">
-                      The expertise of our web team is based on:
-                      PHP/Laravel/Symfony, React/VueJs.
-                    </p>
-                    <a class="btn btn--c" href="#">read case study</a>
+                  <div class="services__slider-content" style="background-image: url(images/services-slider-bg-1.svg);">
+                      <p class="services__slider-text">
+                        The expertise of our web team is based on:
+                        PHP/Laravel/Symfony, React/VueJs.
+                      </p>
+                      <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio(inner-page)">read case study</a>
+                    </div>
                   </div>
                 </div>
                 <div class="services__slider-item">
-                  <div class="services__slider-content" style="
-                        background-image: url(images/services-slider-bg-2.svg);
-                      ">
-                    <p class="services__slider-text">
-                      The expertise of our web team is based on:
-                      PHP/Laravel/Symfony, React/VueJs.
-                    </p>
-                    <a class="btn btn--c" href="#">read case study</a>
+                  <div class="services__slider-content" style="background-image: url(images/services-slider-bg-2.svg);">
+                      <p class="services__slider-text">
+                        The expertise of our web team is based on:
+                        PHP/Laravel/Symfony, React/VueJs.
+                      </p>
+                      <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio(inner-page">read case study</a>
+                    </div>
                   </div>
                 </div>
                 <div class="services__slider-item">
-                  <div class="services__slider-content" style="
-                        background-image: url(images/services-slider-bg-3.svg);
-                      ">
-                    <p class="services__slider-text">
-                      The expertise of our web team is based on:
-                      PHP/Laravel/Symfony, React/VueJs.
-                    </p>
-                    <a class="btn btn--c" href="#">read case study</a>
+                  <div class="services__slider-content" style="background-image: url(images/services-slider-bg-3.svg);">
+                      <p class="services__slider-text">
+                        The expertise of our web team is based on:
+                        PHP/Laravel/Symfony, React/VueJs.
+                      </p>
+                      <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio(inner-page">read case study</a>
+                    </div>
                   </div>
                 </div>
                 <div class="services__slider-item">
-                  <div class="services__slider-content" style="
-                        background-image: url(images/services-slider-bg-4.svg);
-                      ">
-                    <p class="services__slider-text">
-                      The expertise of our web team is based on:
-                      PHP/Laravel/Symfony, React/VueJs.
-                    </p>
-                    <a class="btn btn--c" href="#">read case study</a>
+                  <div class="services__slider-content" style="background-image: url(images/services-slider-bg-4.svg);">
+                      <p class="services__slider-text">
+                        The expertise of our web team is based on:
+                        PHP/Laravel/Symfony, React/VueJs.
+                      </p>
+                      <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio(inner-page">read case study</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -419,47 +438,51 @@
               </button>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="cases" id="cases">
-        <div class="container">
-          <div class="cases__inner">
-            <div class="case case-light" id="case1">
-              <div class="case__info">
-                <h2 class="case__title title-garamond">Сhatgenie.io</h2>
-                <ul class="case__stack">
-                  <li class="case__stack-item">UX/UI DESIGN</li>
-                  <li class="case__stack-item">IOS</li>
-                  <li class="case__stack-item">ANDROID</li>
-                </ul>
-                <a class="btn btn--c" href="#">read case study</a>
-              </div>
+        </section>
+
+        <section class="cases" id="cases">
+          <div class="container">
+            <div class="cases__inner">
+              <img class="case-bg-1" src="images/cases-light-bg-1.svg" alt=""/>
+              <img class="case-bg-2" src="images/cases-light-bg-2.svg" alt=""/>
+
+              <div class="case case-light" id="case1">
+                <div class="case__info">
+                  <h2 class="case__title">Сhatgenie.io</h2>
+                  <ul class="case__stack">
+                    <li class="case__stack-item">UX/UI DESIGN</li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
+                  <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio">read case study</a>
+                </div>
               <picture class="case__card">
                 <source srcset="images/cases-light-card-1.webp" type="image/webp" alt="card">
                 <img src="images/cases-light-card-1.png" alt="card">
               </picture>
-            </div>
-            <img class="case-bg-1" src="images/cases-light-bg-1.svg" alt="" />
-
-            <div class="case case-light" id="case2">
-              <div class="case__info">
-                <h2 class="case__title title-garamond">Getsales.ai</h2>
-                <ul class="case__stack">
-                  <li class="case__stack-item">UX/UI DESIGN</li>
-                  <li class="case__stack-item">IOS</li>
-                  <li class="case__stack-item">ANDROID</li>
-                </ul>
-                <a class="btn btn--c" href="#">read case study</a>
               </div>
-              <picture class="case__card">
+
+              <div class="case case-light" id="case2">
+                <div class="case__info">
+                  <h2 class="case__title">Getsales.ai</h2>
+                  <ul class="case__stack">
+                    <li class="case__stack-item">UX/UI DESIGN</li>
+                    <li class="case__stack-item">IOS</li>
+                    <li class="case__stack-item">ANDROID</li>
+                  </ul>
+                  <a class="btn btn--c" href="https://von808.github.io/LikeSoft/case-studio">read case study</a>
+                </div>
+                              <picture class="case__card">
                 <source srcset="images/cases-light-card-2.webp" type="image/webp" alt="card">
                 <img src="images/cases-light-card-2.png" alt="card">
               </picture>
+              </div>
             </div>
             <img class="case-bg-2" src="images/cases-light-bg-2.svg" alt="" />
           </div>
         </div>
       </section>
+      
       <section class="why">
         <div class="container">
           <div class="why__inner">

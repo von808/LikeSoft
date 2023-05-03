@@ -279,14 +279,14 @@ a{
 
 .white-header{
   .menu__btn span{
-    background-color: $only-black;
+    background-color: var(--var-menu-btn);
   }
   .menu__btn span::before,
   .menu__btn span::after{
-    background-color: $only-black;
+    background-color: var(--var-menu-btn);
   }
   .menu__box{
-    background-color: $only-white;
+    background-color: var(--var-hamburger-white-bg);
   }
 }
 

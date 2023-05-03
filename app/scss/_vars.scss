@@ -20,6 +20,8 @@ $black: #000;
   --var-white-header-svg: #06111C;
   --var-white-header-active: rgba(5, 122, 255, 1);
   --var-white-header-active-hover: rgba(5, 122, 255, 0.5);
+  --var-hamburger-white-bg: #ffffff;
+  --var-menu-btn: #06111C;
   // trust
   --var-trust-bg:#FAFAFA;
   --var-trust-title:#06111C;
@@ -35,6 +37,8 @@ $black: #000;
   --var-cases-info-title:#06111C;
   --var-cases-info-stack-bg:#FAFAFA;
   --var-cases-info-stack:#6A7077;
+  // why
+  --var-why-bg:#FFFFFF;
   //modal
   --var-modal-bg: #14273A;
 
@@ -76,11 +80,12 @@ $black: #000;
   // global
   --var-body-bg:#06111C;
   --var-btn-c: #FFFFFF;
-
   // header
   --var-white-header: #FFFFFF;
   --var-white-header-hover: rgba(255, 255, 255, 0.5);
   --var-white-header-svg: #FFFFFF;
+  --var-hamburger-white-bg: #06111C;
+  --var-menu-btn: #FFFFFF;
   // trust
   --var-trust-bg:#0D1D2E;
   --var-trust-title:#FAFAFA;
@@ -95,6 +100,8 @@ $black: #000;
   --var-cases-info-title:#FFFFFF;
   --var-cases-info-stack-bg:#0D1D2E;
   --var-cases-info-stack:#FFFFFF;
+  // why
+  --var-why-bg:#06111C;
 
   //blog-page
   --var-blog-fc: #FFFFFF;
@@ -122,7 +129,6 @@ $black: #000;
 
   //dropdown
   --var-dropdown-list-bg: #06111C;
-
 
   //css
   .white-header__logo{

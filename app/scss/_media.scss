@@ -318,6 +318,17 @@
 }
 
 @media (max-width: 768px) {
+  .secret {
+    padding-bottom: 80px;
+  }
+
+  .case-bg-1,
+  .case-bg-2 {
+    width: 100%;
+    left: 0;
+    height: 50%;
+  }
+
   .modal__close {
     top: 0;
     right: 1rem;
