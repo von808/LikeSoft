@@ -290,6 +290,8 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	});
 });
 
+
+
 function onEntry(entry) {
 	entry.forEach(change => {
 		if (change.isIntersecting) {
@@ -299,6 +301,14 @@ function onEntry(entry) {
 		}
 	});
 }
+
+let text = $(".revievs__text");
+let revievsToggle = $("#revievsToggle");
+
+revievsToggle.on("click", function (event) {
+event.preventDefault();
+text.toggleClass("full");
+});
 
 let options = {
 	threshold: [0.5]

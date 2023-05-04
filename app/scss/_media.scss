@@ -201,6 +201,9 @@
 }
 
 @media (max-width: 940px) {
+  .case__stack {
+    gap: unset;
+  }
   .blog__rec-items{
     max-width: 641px;
     margin: 0 auto;
@@ -323,6 +326,10 @@
 }
 
 @media (max-width: 768px) {
+  .loader {
+    display: none;
+  }
+
   .secret {
     padding-bottom: 80px;
   }
@@ -332,6 +339,11 @@
     width: 100%;
     left: 0;
     height: 50%;
+    opacity: 1;
+  }
+
+  .case-bg-2 {
+    top: 50%;
   }
 
   .modal__close {
@@ -462,6 +474,10 @@
     padding: 10px 0 0 0;
   }
 
+  .blog {
+    padding: 90px 0 0 0;
+  }
+
   .blog__inner {
     width: 100%;
   }
@@ -510,8 +526,7 @@
     padding: 0 0 40px 0;
   }
 
-  .blog .blog__rec {
-    flex-direction: column;
+  .blog__rec {
     padding-bottom: 60px;
   }
 
@@ -554,6 +569,10 @@
   }
 
   .blog__list {
+    padding: 0 0 80px 0px;
+  }
+  
+  .blog__list .blog__inner {
     padding: 0;
   }
 
@@ -625,12 +644,6 @@
     justify-content: space-around;
   }
 
-
-  // .team .slider__item {
-  //   margin-bottom: 30px;
-  //   min-width: 332px;
-  // }
-
   .case {
     flex-direction: column-reverse;
     align-items: center;
@@ -638,10 +651,6 @@
     padding: 0 0 10px 0;
     min-height: unset;
     height: 430px;
-
-    background-image: url(../images/cases-light-bg-1.svg);
-    background-size: auto;
-    background-position: center;
   }
 
   .case__card {
@@ -655,16 +664,13 @@
 
   .case__info {
     margin: 0 auto;
-    background: #fff;
     width: 90%;
     padding: 20px 10px;
-    // transform: translateY(-75px);
-    // position: absolute;
     bottom: 0;
   }
 
   .cases__inner {
-    margin: 0 -10px;
+    margin: 0 -15px;
   }
 
   .case__title {
@@ -699,6 +705,24 @@
   .media .blog__rec-preview {
     width: 295px;
     margin: 0 auto 20px;
+  }
+  .media__subtitle {
+    margin-bottom: 40px;
+  }
+  .team {
+    margin-bottom: 80px;
+  }
+  .trust--about-us {
+    margin-bottom: 80px;
+  }
+  .revievs {
+    margin-bottom: 80px;
+  }
+  .revievs__text {
+    font-size: 14px;
+  }
+  .revievs__person-post {
+    font-size: 14px;
   }
 }
 
@@ -776,6 +800,16 @@
       height: 150px;
     }
   }
+  .values__title,
+  .revievs__title,
+  .media__title {
+    font-size: 26px;
+  }
+  .values__subtitle,
+  .media__subtitle,
+  .revievs__subtitle {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -790,7 +824,7 @@
 
   .news__content-preview {
     width: 109%;
-    margin: 0 -15px;
+    margin: 0 -15px 40px;
   }
 
   .intro__content {
@@ -898,6 +932,16 @@
   .team__title{
     margin-bottom: 40px;
   }
+  .blog-page .blog__inner {
+    flex-wrap: wrap;
+  }
+
+  .blog__rec-item {
+    margin-bottom: 40px;
+  }
+  .blog__rec-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 420px) {
@@ -926,6 +970,7 @@
 
   .btn {
     width: 100%;
+    text-align: center;
   }
 
   .menu__box {
@@ -1021,10 +1066,6 @@
 
   .case-studio__item-title {
     max-width: 200px;
-  }
-
-  .blog {
-    padding: 90px 0 80px;
   }
 
   .blog .blog__rec-title{
